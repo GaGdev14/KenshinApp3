@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46A92191828200265ECE /* AppDelegate.swift */; };
+		EFCA46AC2191828200265ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46AB2191828200265ECE /* ViewController.swift */; };
+		EFCA46AF2191828200265ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46AD2191828200265ECE /* Main.storyboard */; };
+		EFCA46B12191828300265ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46B02191828300265ECE /* Assets.xcassets */; };
+		EFCA46B42191828300265ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46B22191828300265ECE /* LaunchScreen.storyboard */; };
+		EFCA46BF2191828300265ECE /* KenshinApp3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46BE2191828300265ECE /* KenshinApp3Tests.swift */; };
+		EFCA46CA2191828300265ECE /* KenshinApp3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46C92191828300265ECE /* KenshinApp3UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFCA46BB2191828300265ECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCA469E2191828200265ECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCA46A52191828200265ECE;
+			remoteInfo = KenshinApp3;
+		};
+		EFCA46C62191828300265ECE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFCA469E2191828200265ECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFCA46A52191828200265ECE;
+			remoteInfo = KenshinApp3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFCA46A62191828200265ECE /* KenshinApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenshinApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCA46A92191828200265ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFCA46AB2191828200265ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFCA46AE2191828200265ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFCA46B02191828300265ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFCA46B32191828300265ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFCA46B52191828300265ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCA46BA2191828300265ECE /* KenshinApp3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenshinApp3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCA46BE2191828300265ECE /* KenshinApp3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshinApp3Tests.swift; sourceTree = "<group>"; };
+		EFCA46C02191828300265ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCA46C52191828300265ECE /* KenshinApp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenshinApp3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCA46C92191828300265ECE /* KenshinApp3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshinApp3UITests.swift; sourceTree = "<group>"; };
+		EFCA46CB2191828300265ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFCA46A32191828200265ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA46B72191828300265ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA46C22191828300265ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFCA469D2191828200265ECE = {
+			isa = PBXGroup;
+			children = (
+				EFCA46A82191828200265ECE /* KenshinApp3 */,
+				EFCA46BD2191828300265ECE /* KenshinApp3Tests */,
+				EFCA46C82191828300265ECE /* KenshinApp3UITests */,
+				EFCA46A72191828200265ECE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFCA46A72191828200265ECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA46A62191828200265ECE /* KenshinApp3.app */,
+				EFCA46BA2191828300265ECE /* KenshinApp3Tests.xctest */,
+				EFCA46C52191828300265ECE /* KenshinApp3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFCA46A82191828200265ECE /* KenshinApp3 */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA46A92191828200265ECE /* AppDelegate.swift */,
+				EFCA46AB2191828200265ECE /* ViewController.swift */,
+				EFCA46AD2191828200265ECE /* Main.storyboard */,
+				EFCA46B02191828300265ECE /* Assets.xcassets */,
+				EFCA46B22191828300265ECE /* LaunchScreen.storyboard */,
+				EFCA46B52191828300265ECE /* Info.plist */,
+			);
+			path = KenshinApp3;
+			sourceTree = "<group>";
+		};
+		EFCA46BD2191828300265ECE /* KenshinApp3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA46BE2191828300265ECE /* KenshinApp3Tests.swift */,
+				EFCA46C02191828300265ECE /* Info.plist */,
+			);
+			path = KenshinApp3Tests;
+			sourceTree = "<group>";
+		};
+		EFCA46C82191828300265ECE /* KenshinApp3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA46C92191828300265ECE /* KenshinApp3UITests.swift */,
+				EFCA46CB2191828300265ECE /* Info.plist */,
+			);
+			path = KenshinApp3UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFCA46A52191828200265ECE /* KenshinApp3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCA46CE2191828300265ECE /* Build configuration list for PBXNativeTarget "KenshinApp3" */;
+			buildPhases = (
+				EFCA46A22191828200265ECE /* Sources */,
+				EFCA46A32191828200265ECE /* Frameworks */,
+				EFCA46A42191828200265ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KenshinApp3;
+			productName = KenshinApp3;
+			productReference = EFCA46A62191828200265ECE /* KenshinApp3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFCA46B92191828300265ECE /* KenshinApp3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCA46D12191828300265ECE /* Build configuration list for PBXNativeTarget "KenshinApp3Tests" */;
+			buildPhases = (
+				EFCA46B62191828300265ECE /* Sources */,
+				EFCA46B72191828300265ECE /* Frameworks */,
+				EFCA46B82191828300265ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFCA46BC2191828300265ECE /* PBXTargetDependency */,
+			);
+			name = KenshinApp3Tests;
+			productName = KenshinApp3Tests;
+			productReference = EFCA46BA2191828300265ECE /* KenshinApp3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFCA46C42191828300265ECE /* KenshinApp3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCA46D42191828300265ECE /* Build configuration list for PBXNativeTarget "KenshinApp3UITests" */;
+			buildPhases = (
+				EFCA46C12191828300265ECE /* Sources */,
+				EFCA46C22191828300265ECE /* Frameworks */,
+				EFCA46C32191828300265ECE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFCA46C72191828300265ECE /* PBXTargetDependency */,
+			);
+			name = KenshinApp3UITests;
+			productName = KenshinApp3UITests;
+			productReference = EFCA46C52191828300265ECE /* KenshinApp3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFCA469E2191828200265ECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = GaGdev14;
+				TargetAttributes = {
+					EFCA46A52191828200265ECE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EFCA46B92191828300265ECE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EFCA46A52191828200265ECE;
+					};
+					EFCA46C42191828300265ECE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EFCA46A52191828200265ECE;
+					};
+				};
+			};
+			buildConfigurationList = EFCA46A12191828200265ECE /* Build configuration list for PBXProject "KenshinApp3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFCA469D2191828200265ECE;
+			productRefGroup = EFCA46A72191828200265ECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFCA46A52191828200265ECE /* KenshinApp3 */,
+				EFCA46B92191828300265ECE /* KenshinApp3Tests */,
+				EFCA46C42191828300265ECE /* KenshinApp3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFCA46A42191828200265ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCA46B42191828300265ECE /* LaunchScreen.storyboard in Resources */,
+				EFCA46B12191828300265ECE /* Assets.xcassets in Resources */,
+				EFCA46AF2191828200265ECE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA46B82191828300265ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA46C32191828300265ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFCA46A22191828200265ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCA46AC2191828200265ECE /* ViewController.swift in Sources */,
+				EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA46B62191828300265ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCA46BF2191828300265ECE /* KenshinApp3Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFCA46C12191828300265ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFCA46CA2191828300265ECE /* KenshinApp3UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFCA46BC2191828300265ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCA46A52191828200265ECE /* KenshinApp3 */;
+			targetProxy = EFCA46BB2191828300265ECE /* PBXContainerItemProxy */;
+		};
+		EFCA46C72191828300265ECE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFCA46A52191828200265ECE /* KenshinApp3 */;
+			targetProxy = EFCA46C62191828300265ECE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFCA46AD2191828200265ECE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCA46AE2191828200265ECE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFCA46B22191828300265ECE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFCA46B32191828300265ECE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFCA46CC2191828300265ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFCA46CD2191828300265ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFCA46CF2191828300265ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KenshinApp3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KenshinApp3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFCA46D02191828300265ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KenshinApp3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KenshinApp3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFCA46D22191828300265ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KenshinApp3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KenshinApp3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KenshinApp3.app/KenshinApp3";
+			};
+			name = Debug;
+		};
+		EFCA46D32191828300265ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KenshinApp3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KenshinApp3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KenshinApp3.app/KenshinApp3";
+			};
+			name = Release;
+		};
+		EFCA46D52191828300265ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KenshinApp3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KenshinApp3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KenshinApp3;
+			};
+			name = Debug;
+		};
+		EFCA46D62191828300265ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KenshinApp3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.KenshinApp3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KenshinApp3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFCA46A12191828200265ECE /* Build configuration list for PBXProject "KenshinApp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCA46CC2191828300265ECE /* Debug */,
+				EFCA46CD2191828300265ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCA46CE2191828300265ECE /* Build configuration list for PBXNativeTarget "KenshinApp3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCA46CF2191828300265ECE /* Debug */,
+				EFCA46D02191828300265ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCA46D12191828300265ECE /* Build configuration list for PBXNativeTarget "KenshinApp3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCA46D22191828300265ECE /* Debug */,
+				EFCA46D32191828300265ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFCA46D42191828300265ECE /* Build configuration list for PBXNativeTarget "KenshinApp3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFCA46D52191828300265ECE /* Debug */,
+				EFCA46D62191828300265ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFCA469E2191828200265ECE /* Project object */;
+}
