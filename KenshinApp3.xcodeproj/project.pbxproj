@@ -14,6 +14,11 @@
 		EFCA46B42191828300265ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46B22191828300265ECE /* LaunchScreen.storyboard */; };
 		EFCA46BF2191828300265ECE /* KenshinApp3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46BE2191828300265ECE /* KenshinApp3Tests.swift */; };
 		EFCA46CA2191828300265ECE /* KenshinApp3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46C92191828300265ECE /* KenshinApp3UITests.swift */; };
+		EFCA46D821918ADC00265ECE /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46D721918ADC00265ECE /* Customer.storyboard */; };
+		EFCA46DA2195956B00265ECE /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46D92195956B00265ECE /* Detail.storyboard */; };
+		EFCA46DC219595DF00265ECE /* Communication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46DB219595DF00265ECE /* Communication.storyboard */; };
+		EFCA46E02196D48200265ECE /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46DF2196D48200265ECE /* Tabbar.storyboard */; };
+		EFCA46E22196D76500265ECE /* VCCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46E12196D76500265ECE /* VCCustomer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		EFCA46C52191828300265ECE /* KenshinApp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenshinApp3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCA46C92191828300265ECE /* KenshinApp3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshinApp3UITests.swift; sourceTree = "<group>"; };
 		EFCA46CB2191828300265ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFCA46D721918ADC00265ECE /* Customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Customer.storyboard; sourceTree = "<group>"; };
+		EFCA46D92195956B00265ECE /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		EFCA46DB219595DF00265ECE /* Communication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Communication.storyboard; sourceTree = "<group>"; };
+		EFCA46DF2196D48200265ECE /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
+		EFCA46E12196D76500265ECE /* VCCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCustomer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +110,14 @@
 				EFCA46A92191828200265ECE /* AppDelegate.swift */,
 				EFCA46AB2191828200265ECE /* ViewController.swift */,
 				EFCA46AD2191828200265ECE /* Main.storyboard */,
+				EFCA46D92195956B00265ECE /* Detail.storyboard */,
+				EFCA46D721918ADC00265ECE /* Customer.storyboard */,
+				EFCA46DB219595DF00265ECE /* Communication.storyboard */,
+				EFCA46DF2196D48200265ECE /* Tabbar.storyboard */,
 				EFCA46B02191828300265ECE /* Assets.xcassets */,
 				EFCA46B22191828300265ECE /* LaunchScreen.storyboard */,
 				EFCA46B52191828300265ECE /* Info.plist */,
+				EFCA46E12196D76500265ECE /* VCCustomer.swift */,
 			);
 			path = KenshinApp3;
 			sourceTree = "<group>";
@@ -229,9 +244,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCA46D821918ADC00265ECE /* Customer.storyboard in Resources */,
 				EFCA46B42191828300265ECE /* LaunchScreen.storyboard in Resources */,
 				EFCA46B12191828300265ECE /* Assets.xcassets in Resources */,
+				EFCA46E02196D48200265ECE /* Tabbar.storyboard in Resources */,
+				EFCA46DA2195956B00265ECE /* Detail.storyboard in Resources */,
 				EFCA46AF2191828200265ECE /* Main.storyboard in Resources */,
+				EFCA46DC219595DF00265ECE /* Communication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFCA46AC2191828200265ECE /* ViewController.swift in Sources */,
+				EFCA46E22196D76500265ECE /* VCCustomer.swift in Sources */,
 				EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
