@@ -11,7 +11,7 @@ import UIKit
 class VCDetail: UIViewController {
  
     @IBOutlet weak var changeContauner: UISegmentedControl!
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var containerView: UITableView!
     @IBOutlet weak var serviceContainer: UIView!
     @IBOutlet weak var dogContainer: UIView!
     @IBOutlet weak var otherContainer: UIView!
