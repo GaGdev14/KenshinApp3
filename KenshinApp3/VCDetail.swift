@@ -14,16 +14,12 @@ class VCDetail: UIViewController {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var serviceContainer: UIView!
     @IBOutlet weak var dogContainer: UIView!
-    //@IBOutlet weak var otherContainer: UIView!
+    @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
-    
-    //インデックス
-    //var num:Int = 0
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        containers = [serviceContainer,dogContainer]
+        containers = [serviceContainer,dogContainer,otherContainer]
         containerView.bringSubviewToFront(serviceContainer)
     }
     

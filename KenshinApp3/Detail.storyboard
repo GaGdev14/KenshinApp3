@@ -32,6 +32,7 @@
                                         <segments>
                                             <segment title="サービス"/>
                                             <segment title="犬"/>
+                                            <segment title="その他"/>
                                         </segments>
                                         <connections>
                                             <action selector="changeContainerView:" destination="TQe-Xx-iGo" eventType="valueChanged" id="iCZ-0Y-hFc"/>
@@ -63,6 +64,13 @@
                                             <segue destination="C8B-B2-E23" kind="embed" id="9fN-am-l4c"/>
                                         </connections>
                                     </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgM-ZJ-Myf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <connections>
+                                            <segue destination="JB9-s7-p0f" kind="embed" id="Wld-3H-wYp"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -89,6 +97,7 @@
                         <outlet property="changeContauner" destination="RGf-dK-xkP" id="fCA-mx-GEr"/>
                         <outlet property="containerView" destination="ghc-7o-ZiT" id="7as-hQ-3aD"/>
                         <outlet property="dogContainer" destination="2Hd-hY-tVz" id="P5H-As-vlt"/>
+                        <outlet property="otherContainer" destination="MgM-ZJ-Myf" id="yVe-Dz-IZG"/>
                         <outlet property="serviceContainer" destination="jwx-Jz-Qle" id="zqm-Ig-Q01"/>
                     </connections>
                 </viewController>
@@ -141,6 +150,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y9L-Ec-X9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="910" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="goX-Bd-W7p">
+            <objects>
+                <viewController id="JB9-s7-p0f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1a0-wZ-GEU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="その他" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muj-7m-vOm">
+                                <rect key="frame" x="124" y="88" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVl-Dz-e99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="579.31034482758628"/>
         </scene>
     </scenes>
 </document>
