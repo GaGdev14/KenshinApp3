@@ -18,15 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-YM-ZY6">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-YM-ZY6">
                                 <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="お客さま" id="EdZ-Tz-ztQ"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="7aK-KA-D4h"/>
+                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="top" secondItem="Za6-mg-dJz" secondAttribute="top" id="8Ll-cZ-lxh"/>
+                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="U2D-I9-6cg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Za6-mg-dJz"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="お客さま" id="A0B-qa-NXw"/>
