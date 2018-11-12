@@ -81,6 +81,7 @@
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="leading" secondItem="ghc-7o-ZiT" secondAttribute="leading" id="BIk-TN-8cj"/>
                             <constraint firstAttribute="trailing" secondItem="yGp-2d-3Zo" secondAttribute="trailing" id="GJx-e4-4Oa"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="trailing" secondItem="ghc-7o-ZiT" secondAttribute="trailing" id="GWW-HB-KXQ"/>
+                            <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" id="K0b-em-teZ"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="top" secondItem="L4i-SX-xdU" secondAttribute="top" constant="213" id="QTy-WN-uIb"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="bottom" secondItem="7TJ-pS-LSA" secondAttribute="bottom" id="Wwl-AO-JHM"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="trailing" secondItem="bU5-vG-1jT" secondAttribute="trailing" id="c7C-hT-nFQ"/>
@@ -88,6 +89,7 @@
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="bottom" constant="8" symbolic="YES" id="ncR-U7-BJk"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="top" secondItem="7TJ-pS-LSA" secondAttribute="top" id="uMb-gQ-BLU"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="L4i-SX-xdU" secondAttribute="leading" id="vdi-b1-ZhF"/>
+                            <constraint firstItem="yGp-2d-3Zo" firstAttribute="trailing" secondItem="7TJ-pS-LSA" secondAttribute="trailing" id="y9o-Hr-GNk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7TJ-pS-LSA"/>
                     </view>

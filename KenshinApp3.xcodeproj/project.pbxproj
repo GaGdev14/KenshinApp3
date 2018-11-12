@@ -23,6 +23,7 @@
 		EFCA46DC219595DF00265ECE /* Communication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46DB219595DF00265ECE /* Communication.storyboard */; };
 		EFCA46E02196D48200265ECE /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46DF2196D48200265ECE /* Tabbar.storyboard */; };
 		EFCA46E22196D76500265ECE /* VCCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46E12196D76500265ECE /* VCCustomer.swift */; };
+		EFCA46E621994DA900265ECE /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46E521994DA900265ECE /* UIColorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		EFCA46DB219595DF00265ECE /* Communication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Communication.storyboard; sourceTree = "<group>"; };
 		EFCA46DF2196D48200265ECE /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		EFCA46E12196D76500265ECE /* VCCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCustomer.swift; sourceTree = "<group>"; };
+		EFCA46E521994DA900265ECE /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		EFCA46A82191828200265ECE /* KenshinApp3 */ = {
 			isa = PBXGroup;
 			children = (
+				EFCA46E521994DA900265ECE /* UIColorHex.swift */,
 				EFCA46A92191828200265ECE /* AppDelegate.swift */,
 				EFCA46AB2191828200265ECE /* ViewController.swift */,
 				EFCA46AD2191828200265ECE /* Main.storyboard */,
@@ -292,6 +295,7 @@
 				EFCA46AC2191828200265ECE /* ViewController.swift in Sources */,
 				7200A4912197D6DE002BDB93 /* VCDetail.swift in Sources */,
 				EFCA46E22196D76500265ECE /* VCCustomer.swift in Sources */,
+				EFCA46E621994DA900265ECE /* UIColorHex.swift in Sources */,
 				7200A4932197F037002BDB93 /* VCDetail_ServiceContainer.swift in Sources */,
 				EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */,
 			);
