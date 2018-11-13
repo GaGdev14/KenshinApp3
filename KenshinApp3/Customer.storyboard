@@ -24,12 +24,27 @@
                                     <navigationItem title="お客さま" id="EdZ-Tz-ztQ"/>
                                 </items>
                             </navigationBar>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="ZK5-qr-hiD">
+                                <rect key="frame" x="0.0" y="98" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1aX-iA-Vv2">
+                                <rect key="frame" x="0.0" y="169" width="375" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ZK5-qr-hiD" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="3VT-LJ-nwF"/>
                             <constraint firstItem="eQZ-YM-ZY6" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="7aK-KA-D4h"/>
                             <constraint firstItem="eQZ-YM-ZY6" firstAttribute="top" secondItem="Za6-mg-dJz" secondAttribute="top" id="8Ll-cZ-lxh"/>
+                            <constraint firstItem="ZK5-qr-hiD" firstAttribute="top" secondItem="eQZ-YM-ZY6" secondAttribute="bottom" constant="10" id="Asx-ns-nlh"/>
+                            <constraint firstItem="1aX-iA-Vv2" firstAttribute="top" secondItem="ZK5-qr-hiD" secondAttribute="bottom" constant="15" id="BRu-68-5NL"/>
+                            <constraint firstItem="1aX-iA-Vv2" firstAttribute="bottom" secondItem="Za6-mg-dJz" secondAttribute="bottom" id="BqI-2N-cqf"/>
+                            <constraint firstItem="1aX-iA-Vv2" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="MuH-uF-Dw4"/>
                             <constraint firstItem="eQZ-YM-ZY6" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="U2D-I9-6cg"/>
+                            <constraint firstItem="ZK5-qr-hiD" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="aEp-ci-Xnm"/>
+                            <constraint firstItem="1aX-iA-Vv2" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="fV3-bc-0pj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Za6-mg-dJz"/>
                     </view>
@@ -38,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qe-j7-h6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="37"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="36.945812807881772"/>
         </scene>
     </scenes>
 </document>

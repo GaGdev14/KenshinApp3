@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="9lh-t6-Adm"/>
-                                    <constraint firstAttribute="width" constant="230" id="n30-7O-IiZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="n30-7O-IiZ"/>
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ログイン"/>
@@ -47,7 +47,7 @@
                                 <rect key="frame" x="94" y="237" width="227" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="PgU-cf-hzb"/>
-                                    <constraint firstAttribute="width" constant="227" id="gkK-WG-tjH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="227" id="gkK-WG-tjH"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -56,16 +56,15 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASS" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zni-Mr-3nE">
                                 <rect key="frame" x="94" y="287" width="227" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="227" id="ADF-Re-B5Y"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="227" id="ADF-Re-B5Y"/>
                                     <constraint firstAttribute="height" constant="40" id="qIf-Qk-J8W"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="パスワードを忘れた方へ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwK-DW-7Tq">
-                                <rect key="frame" x="94" y="495" width="146" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="パスワードを忘れた方へ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwK-DW-7Tq">
+                                <rect key="frame" x="94" y="493" width="146" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -81,12 +80,15 @@
                             <constraint firstItem="Ttx-me-EgZ" firstAttribute="trailing" secondItem="j0D-nT-D4t" secondAttribute="trailing" id="OIf-iK-UFZ"/>
                             <constraint firstItem="Ttx-me-EgZ" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" id="PVj-tT-hqB"/>
                             <constraint firstItem="725-ua-JSv" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" constant="94" id="Pgv-pe-X3b"/>
+                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="fjV-vA-PeE" secondAttribute="trailing" constant="93" id="RSS-Hj-glQ"/>
                             <constraint firstItem="725-ua-JSv" firstAttribute="top" secondItem="Ttx-me-EgZ" secondAttribute="bottom" constant="40" id="RXZ-kw-baC"/>
+                            <constraint firstItem="zni-Mr-3nE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j0D-nT-D4t" secondAttribute="leading" symbolic="YES" id="ReF-Nt-bGw"/>
+                            <constraint firstItem="GwK-DW-7Tq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wd2-Eg-Ao5" secondAttribute="leading" id="Zsu-GN-ES0"/>
                             <constraint firstItem="fjV-vA-PeE" firstAttribute="top" secondItem="725-ua-JSv" secondAttribute="bottom" constant="55" id="caz-NI-eH2"/>
-                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="fjV-vA-PeE" secondAttribute="trailing" constant="93" id="dG7-Pf-YdL"/>
-                            <constraint firstItem="zni-Mr-3nE" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" constant="94" id="fyu-Hk-IBy"/>
+                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="GwK-DW-7Tq" secondAttribute="trailing" constant="174" id="gQz-Iy-SIw"/>
                             <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="zni-Mr-3nE" secondAttribute="trailing" constant="93" id="m8B-q3-gw6"/>
-                            <constraint firstItem="Wd2-Eg-Ao5" firstAttribute="leading" secondItem="fjV-vA-PeE" secondAttribute="leading" id="pmf-z5-en9"/>
+                            <constraint firstItem="GwK-DW-7Tq" firstAttribute="top" secondItem="Wd2-Eg-Ao5" secondAttribute="bottom" constant="15" id="mCz-Xe-Ld0"/>
+                            <constraint firstItem="Wd2-Eg-Ao5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fjV-vA-PeE" secondAttribute="leading" id="pmf-z5-en9"/>
                             <constraint firstItem="Ttx-me-EgZ" firstAttribute="top" secondItem="j0D-nT-D4t" secondAttribute="top" id="rUN-1Z-ilx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j0D-nT-D4t"/>
