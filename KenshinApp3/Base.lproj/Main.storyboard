@@ -25,6 +25,7 @@
                                     <constraint firstAttribute="height" constant="45" id="9lh-t6-Adm"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="n30-7O-IiZ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ログイン"/>
                                 <connections>
@@ -69,6 +70,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ガスパッチョ" translatesAutoresizingMaskIntoConstraints="NO" id="jMW-dh-6gK">
+                                <rect key="frame" x="238" y="663" width="141" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yq6-Mh-cV0">
+                                <rect key="frame" x="94" y="600" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -107,4 +119,7 @@
             <point key="canvasLocation" x="254" y="-354"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ガスパッチョ" width="74" height="94"/>
+    </resources>
 </document>
