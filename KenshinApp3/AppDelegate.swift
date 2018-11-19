@@ -7,21 +7,39 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    //index
+    var num:Int?
+    
+        
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+            do {
+                let defaultURL = Realm.Configuration.defaultConfiguration.fileURL!
+                // Realmファイルを削除
+                try FileManager.default.removeItem( at: defaultURL) }
+            catch {
+                //削除できない場合の対応
+            }
         
-        // ナビゲーションバーの色変更
-        UINavigationBar.appearance().barTintColor = UIColor(hex: "5D4037", alpha: 1.0)
+        //保存先の出力
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         
-        // ナビゲーションタイトルの色変更
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(hex: "FFFFFF", alpha: 1.0)]
+        let dataM = DataManager()
+        let csvArray = dataM.csvLoad(filename: "Sample")
+        for csvStr in csvArray {
+            dataM.saveCsvValue(csvStr: csvStr)
+        }
+        
+            // ナビゲーションバーの色変更
+            UINavigationBar.appearance().barTintColor = UIColor(hex: "5D4037", alpha: 1.0)
+            
+            // ナビゲーションタイトルの色変更
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(hex: "FFFFFF", alpha: 1.0)]
 
         return true
     }

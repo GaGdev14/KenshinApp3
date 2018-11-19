@@ -16,6 +16,7 @@
 		76F170F41AE43506ADEDCE3D /* Pods_KenshinApp3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E7EB89268890F0C39C8FB2A /* Pods_KenshinApp3Tests.framework */; };
 		EF2D6A89219ACBDF0002228F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D6A88219ACBDF0002228F /* DataManager.swift */; };
 		EF2D6A8B219ACBEA0002228F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2D6A8A219ACBEA0002228F /* DataModel.swift */; };
+		EF2D6A8D21A28CE10002228F /* Sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = EF2D6A8C21A28CE10002228F /* Sample.csv */; };
 		EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46A92191828200265ECE /* AppDelegate.swift */; };
 		EFCA46AC2191828200265ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46AB2191828200265ECE /* ViewController.swift */; };
 		EFCA46AF2191828200265ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46AD2191828200265ECE /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		E5B30244302FED8DE3328431 /* Pods_KenshinApp3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KenshinApp3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2D6A88219ACBDF0002228F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EF2D6A8A219ACBEA0002228F /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EF2D6A8C21A28CE10002228F /* Sample.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample.csv; sourceTree = "<group>"; };
 		EFCA46A62191828200265ECE /* KenshinApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenshinApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCA46A92191828200265ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCA46AB2191828200265ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		EFCA46A82191828200265ECE /* KenshinApp3 */ = {
 			isa = PBXGroup;
 			children = (
+				EF2D6A8C21A28CE10002228F /* Sample.csv */,
 				EF2D6A8A219ACBEA0002228F /* DataModel.swift */,
 				EF2D6A88219ACBDF0002228F /* DataManager.swift */,
 				EFCA46E521994DA900265ECE /* UIColorHex.swift */,
@@ -315,6 +318,7 @@
 				EFCA46E02196D48200265ECE /* Tabbar.storyboard in Resources */,
 				EFCA46DA2195956B00265ECE /* Detail.storyboard in Resources */,
 				EFCA46AF2191828200265ECE /* Main.storyboard in Resources */,
+				EF2D6A8D21A28CE10002228F /* Sample.csv in Resources */,
 				EFCA46DC219595DF00265ECE /* Communication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
