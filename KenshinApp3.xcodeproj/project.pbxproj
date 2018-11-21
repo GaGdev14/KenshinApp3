@@ -12,6 +12,7 @@
 		7200A4952197F71B002BDB93 /* VCDetail_DogContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7200A4942197F71B002BDB93 /* VCDetail_DogContainer.swift */; };
 		7200A4972197F81B002BDB93 /* VCDetail_OtherContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7200A4962197F81B002BDB93 /* VCDetail_OtherContainer.swift */; };
 		72FAF6F121996747000E1732 /* RegisterValues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72FAF6F021996747000E1732 /* RegisterValues.storyboard */; };
+		72FAF6F7219979CD000E1732 /* VCRegisterValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAF6F6219979CD000E1732 /* VCRegisterValues.swift */; };
 		EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46A92191828200265ECE /* AppDelegate.swift */; };
 		EFCA46AC2191828200265ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46AB2191828200265ECE /* ViewController.swift */; };
 		EFCA46AF2191828200265ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46AD2191828200265ECE /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		7200A4942197F71B002BDB93 /* VCDetail_DogContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetail_DogContainer.swift; sourceTree = "<group>"; };
 		7200A4962197F81B002BDB93 /* VCDetail_OtherContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCDetail_OtherContainer.swift; sourceTree = "<group>"; };
 		72FAF6F021996747000E1732 /* RegisterValues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterValues.storyboard; sourceTree = "<group>"; };
+		72FAF6F6219979CD000E1732 /* VCRegisterValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCRegisterValues.swift; sourceTree = "<group>"; };
 		EFCA46A62191828200265ECE /* KenshinApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenshinApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCA46A92191828200265ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCA46AB2191828200265ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,11 +126,12 @@
 				EFCA46AB2191828200265ECE /* ViewController.swift */,
 				EFCA46AD2191828200265ECE /* Main.storyboard */,
 				EFCA46D92195956B00265ECE /* Detail.storyboard */,
-				72FAF6F021996747000E1732 /* RegisterValues.storyboard */,
 				7200A4902197D6DD002BDB93 /* VCDetail.swift */,
 				7200A4922197F037002BDB93 /* VCDetail_ServiceContainer.swift */,
 				7200A4942197F71B002BDB93 /* VCDetail_DogContainer.swift */,
 				7200A4962197F81B002BDB93 /* VCDetail_OtherContainer.swift */,
+				72FAF6F021996747000E1732 /* RegisterValues.storyboard */,
+				72FAF6F6219979CD000E1732 /* VCRegisterValues.swift */,
 				EFCA46D721918ADC00265ECE /* Customer.storyboard */,
 				EFCA46DB219595DF00265ECE /* Communication.storyboard */,
 				EFCA46DF2196D48200265ECE /* Tabbar.storyboard */,
@@ -300,6 +303,7 @@
 				7200A4912197D6DE002BDB93 /* VCDetail.swift in Sources */,
 				EFCA46E22196D76500265ECE /* VCCustomer.swift in Sources */,
 				EFCA46E621994DA900265ECE /* UIColorHex.swift in Sources */,
+				72FAF6F7219979CD000E1732 /* VCRegisterValues.swift in Sources */,
 				7200A4932197F037002BDB93 /* VCDetail_ServiceContainer.swift in Sources */,
 				EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */,
 			);
