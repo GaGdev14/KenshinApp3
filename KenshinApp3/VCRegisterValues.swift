@@ -10,7 +10,43 @@ import UIKit
 
 class VCRegisterValues: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var lastMonthValue: UILabel!
     @IBOutlet weak var inputValue: UITextField!
     
+    @IBAction func closePage(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
+    @IBOutlet weak var message: UILabel!
+    
+    @IBOutlet weak var registerValue: UIButton!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //入力ボックスのデフォルト値（うっすら表示する文字）
+        inputValue.placeholder = "入力してください"
+        
+        //数字のキーボードを表示する
+        self.inputValue.keyboardType = UIKeyboardType.numberPad
+        
+        registerValue.isEnabled = false
+        message.isHidden = true
+        
+    }
+    
+    func tapCloseKeyBoard(){
+        print("Doneボタン押下")
+        /*
+         文言の表示・非表示を切り替えたい
+         self.message.isHidden = false
+
+        
+        //登録ボタン活性化 これも落ちる。
+        self.registerValue.isEnabled = true
+ 
+  */
+    }
 }
