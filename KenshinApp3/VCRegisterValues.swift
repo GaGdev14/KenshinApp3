@@ -16,13 +16,25 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBOutlet weak var message: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //数字のキーボードを表示する
         self.inputValue.keyboardType = UIKeyboardType.numberPad
         
-    
+        message.isHidden = true
+        
+        
     }
+    
+    func tapCloseKeyBoard(){
+     //message.isHidden = false
+     print("Doneボタン押下")
+    }
+    
+    
     
 }
