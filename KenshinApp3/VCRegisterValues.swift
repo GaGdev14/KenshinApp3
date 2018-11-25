@@ -16,6 +16,13 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //数字のキーボードを表示する
+        self.inputValue.keyboardType = UIKeyboardType.numberPad
+        
     
+    }
     
 }

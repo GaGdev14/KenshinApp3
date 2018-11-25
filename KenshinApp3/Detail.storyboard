@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="213" width="375" height="47"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RGf-dK-xkP">
-                                        <rect key="frame" x="0.0" y="19" width="375" height="28"/>
+                                        <rect key="frame" x="0.0" y="2" width="375" height="29"/>
                                         <segments>
                                             <segment title="サービス"/>
                                             <segment title="犬"/>
@@ -41,10 +41,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="top" constant="19" id="9Pp-Vb-EKK"/>
+                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="top" constant="2" id="9Pp-Vb-EKK"/>
                                     <constraint firstAttribute="trailing" secondItem="RGf-dK-xkP" secondAttribute="trailing" id="Q6v-Xa-DVb"/>
-                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="leading" secondItem="bU5-vG-1jT" secondAttribute="leading" id="jHO-lZ-GQB"/>
-                                    <constraint firstAttribute="bottom" secondItem="RGf-dK-xkP" secondAttribute="bottom" constant="1" id="yE5-sF-lL4"/>
+                                    <constraint firstAttribute="leading" secondItem="RGf-dK-xkP" secondAttribute="leading" id="jHO-lZ-GQB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-7o-ZiT">
@@ -81,16 +80,52 @@
                                     <segue destination="pAs-ml-iSg" kind="show" id="GSn-PH-oDw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="氏名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-TE-zqy">
+                                <rect key="frame" x="37" y="78" width="62" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{社番}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNJ-EG-ehi">
+                                <rect key="frame" x="111" y="107" width="55" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{氏名}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVB-Ds-Amb">
+                                <rect key="frame" x="111" y="78" width="55" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社番：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRd-BF-r5p">
+                                <rect key="frame" x="37" y="107" width="62" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GRd-BF-r5p" firstAttribute="top" secondItem="IB2-TE-zqy" secondAttribute="bottom" constant="5" id="7q8-NC-OII"/>
+                            <constraint firstItem="fNJ-EG-ehi" firstAttribute="leading" secondItem="GRd-BF-r5p" secondAttribute="trailing" constant="12" id="9hr-gu-C7c"/>
+                            <constraint firstItem="bVB-Ds-Amb" firstAttribute="leading" secondItem="IB2-TE-zqy" secondAttribute="trailing" constant="12" id="9k6-Cj-Lah"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="L4i-SX-xdU" secondAttribute="top" constant="268" id="ApI-Gr-9hX"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="leading" secondItem="ghc-7o-ZiT" secondAttribute="leading" id="BIk-TN-8cj"/>
                             <constraint firstAttribute="trailing" secondItem="yGp-2d-3Zo" secondAttribute="trailing" id="GJx-e4-4Oa"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="trailing" secondItem="ghc-7o-ZiT" secondAttribute="trailing" id="GWW-HB-KXQ"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" id="K0b-em-teZ"/>
+                            <constraint firstItem="bVB-Ds-Amb" firstAttribute="top" secondItem="yGp-2d-3Zo" secondAttribute="bottom" constant="14" id="LiM-ja-DkU"/>
+                            <constraint firstItem="GRd-BF-r5p" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" constant="37" id="PvN-mP-7Tc"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="top" secondItem="7TJ-pS-LSA" secondAttribute="top" constant="193" id="QTy-WN-uIb"/>
+                            <constraint firstItem="fNJ-EG-ehi" firstAttribute="top" secondItem="bVB-Ds-Amb" secondAttribute="bottom" constant="5" id="UZd-x1-dzz"/>
+                            <constraint firstItem="GRd-BF-r5p" firstAttribute="leading" secondItem="IB2-TE-zqy" secondAttribute="leading" id="Vec-Uy-adZ"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="bottom" secondItem="7TJ-pS-LSA" secondAttribute="bottom" id="Wwl-AO-JHM"/>
+                            <constraint firstItem="IB2-TE-zqy" firstAttribute="top" secondItem="yGp-2d-3Zo" secondAttribute="bottom" constant="14" id="by2-jw-vLP"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="trailing" secondItem="bU5-vG-1jT" secondAttribute="trailing" id="c7C-hT-nFQ"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="bU5-vG-1jT" secondAttribute="leading" id="jeP-Nz-6bd"/>
                             <constraint firstItem="tIV-f0-KdG" firstAttribute="bottom" secondItem="bU5-vG-1jT" secondAttribute="top" constant="2" id="nWs-KC-Rih"/>
