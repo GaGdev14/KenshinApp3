@@ -12,5 +12,10 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var inputValue: UITextField!
     
+    @IBAction func closePage(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     
 }
