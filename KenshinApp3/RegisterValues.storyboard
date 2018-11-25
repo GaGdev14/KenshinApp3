@@ -18,20 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="今回：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fd-Wd-51c">
-                                <rect key="frame" x="60" y="155" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今回　：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fd-Wd-51c">
+                                <rect key="frame" x="60" y="151" width="77.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="前回：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-Kw-5Oh">
-                                <rect key="frame" x="60" y="104" width="52" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前回　：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BgF-Kw-5Oh">
+                                <rect key="frame" x="60" y="114" width="77.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HqV-DY-YJU" customClass="NumberKeyBoard" customModule="KenshinApp3" customModuleProvider="target">
-                                <rect key="frame" x="126" y="150" width="163" height="30"/>
+                                <rect key="frame" x="151.5" y="147.5" width="163" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="OER-jX-L9X"/>
                                     <constraint firstAttribute="height" constant="30" id="zFT-EF-C5K"/>
@@ -53,14 +53,8 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前年度：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pil-g8-VE9">
-                                <rect key="frame" x="62" y="261" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="{ 前回検針値 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-H7-hM2">
-                                <rect key="frame" x="132" y="112" width="108" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="60" y="188" width="77.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -71,24 +65,61 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nro-Yd-ojm">
+                                <rect key="frame" x="263" y="294" width="53" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="registerValue:" destination="fKT-ZD-4XC" eventType="touchUpInside" id="nzf-cf-k0t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今月　：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-pl-iRY">
+                                <rect key="frame" x="60" y="225" width="77.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 前年度使用量 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vth-8J-sf8">
+                                <rect key="frame" x="157.5" y="188" width="139.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 今年度使用量 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg8-7b-G4g">
+                                <rect key="frame" x="157.5" y="225" width="139.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="{ 前回検針値 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-H7-hM2">
+                                <rect key="frame" x="157" y="115" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Pil-g8-VE9" firstAttribute="top" secondItem="0fd-Wd-51c" secondAttribute="bottom" constant="85" id="33Z-hO-CBT"/>
+                            <constraint firstItem="Pil-g8-VE9" firstAttribute="top" secondItem="0fd-Wd-51c" secondAttribute="bottom" constant="14" id="33Z-hO-CBT"/>
                             <constraint firstItem="ymR-mO-Xb9" firstAttribute="leading" secondItem="9YR-yN-5mA" secondAttribute="leading" id="42m-oo-o2z"/>
                             <constraint firstItem="0fd-Wd-51c" firstAttribute="top" secondItem="BgF-Kw-5Oh" secondAttribute="bottom" constant="14" id="6zv-Xp-IEi"/>
-                            <constraint firstItem="HqV-DY-YJU" firstAttribute="top" secondItem="MQT-H7-hM2" secondAttribute="bottom" constant="25" id="AcI-u8-nk5"/>
+                            <constraint firstItem="HqV-DY-YJU" firstAttribute="centerY" secondItem="0fd-Wd-51c" secondAttribute="centerY" id="AcI-u8-nk5"/>
                             <constraint firstItem="BgF-Kw-5Oh" firstAttribute="leading" secondItem="66U-da-IZz" secondAttribute="leading" constant="60" id="Ahg-b9-Ne3"/>
                             <constraint firstItem="0fd-Wd-51c" firstAttribute="centerY" secondItem="HqV-DY-YJU" secondAttribute="centerY" id="B5N-es-9hD"/>
                             <constraint firstItem="HqV-DY-YJU" firstAttribute="leading" secondItem="0fd-Wd-51c" secondAttribute="trailing" constant="14" id="ER4-vQ-MW7"/>
                             <constraint firstAttribute="trailing" secondItem="ymR-mO-Xb9" secondAttribute="trailing" id="K3r-qz-GHk"/>
-                            <constraint firstItem="Pil-g8-VE9" firstAttribute="leading" secondItem="66U-da-IZz" secondAttribute="leading" constant="62" id="Ocl-px-jdT"/>
+                            <constraint firstItem="Pil-g8-VE9" firstAttribute="leading" secondItem="66U-da-IZz" secondAttribute="leading" constant="60" id="Ocl-px-jdT"/>
+                            <constraint firstItem="Vth-8J-sf8" firstAttribute="centerY" secondItem="Pil-g8-VE9" secondAttribute="centerY" id="P05-Ao-pJk"/>
                             <constraint firstItem="BgF-Kw-5Oh" firstAttribute="leading" secondItem="0fd-Wd-51c" secondAttribute="leading" id="Uec-4g-6Eg"/>
-                            <constraint firstItem="BgF-Kw-5Oh" firstAttribute="top" secondItem="ymR-mO-Xb9" secondAttribute="bottom" constant="40" id="WU3-7U-T3C"/>
+                            <constraint firstItem="BgF-Kw-5Oh" firstAttribute="top" secondItem="ymR-mO-Xb9" secondAttribute="bottom" constant="50" id="WU3-7U-T3C"/>
+                            <constraint firstItem="8Ah-pl-iRY" firstAttribute="top" secondItem="Pil-g8-VE9" secondAttribute="bottom" constant="14" id="YMh-8p-hBo"/>
                             <constraint firstItem="MQT-H7-hM2" firstAttribute="leading" secondItem="BgF-Kw-5Oh" secondAttribute="trailing" constant="20" id="e6W-UD-LhT"/>
-                            <constraint firstItem="Pil-g8-VE9" firstAttribute="top" secondItem="HqV-DY-YJU" secondAttribute="bottom" constant="81" id="gab-fY-klq"/>
+                            <constraint firstItem="mg8-7b-G4g" firstAttribute="centerY" secondItem="8Ah-pl-iRY" secondAttribute="centerY" id="gRB-Re-3z0"/>
+                            <constraint firstItem="8Ah-pl-iRY" firstAttribute="leading" secondItem="66U-da-IZz" secondAttribute="leading" constant="60" id="hdn-tq-Uh4"/>
                             <constraint firstItem="ymR-mO-Xb9" firstAttribute="top" secondItem="66U-da-IZz" secondAttribute="top" id="n8b-dK-KFF"/>
-                            <constraint firstItem="MQT-H7-hM2" firstAttribute="top" secondItem="ymR-mO-Xb9" secondAttribute="bottom" constant="40" id="vC7-3f-w31"/>
+                            <constraint firstItem="Vth-8J-sf8" firstAttribute="leading" secondItem="Pil-g8-VE9" secondAttribute="trailing" constant="20" id="qOr-5o-7eU"/>
+                            <constraint firstItem="mg8-7b-G4g" firstAttribute="leading" secondItem="8Ah-pl-iRY" secondAttribute="trailing" constant="20" id="uyE-AV-HXs"/>
+                            <constraint firstItem="MQT-H7-hM2" firstAttribute="centerY" secondItem="BgF-Kw-5Oh" secondAttribute="centerY" id="vC7-3f-w31"/>
                             <constraint firstItem="BgF-Kw-5Oh" firstAttribute="firstBaseline" secondItem="MQT-H7-hM2" secondAttribute="firstBaseline" id="ydn-uS-CBY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="66U-da-IZz"/>
@@ -96,7 +127,9 @@
                     <connections>
                         <outlet property="Message" destination="5RB-KV-cn4" id="MUu-AR-gqm"/>
                         <outlet property="inputValue" destination="HqV-DY-YJU" id="JTf-ZA-uvG"/>
-                        <outlet property="message" destination="5RB-KV-cn4" id="mMx-N0-Xff"/>
+                        <outlet property="lastMonthValue" destination="MQT-H7-hM2" id="n4i-dy-qMt"/>
+                        <outlet property="message" destination="5RB-KV-cn4" id="8tF-Yt-jgz"/>
+                        <outlet property="registerValue" destination="nro-Yd-ojm" id="08R-Fu-XoL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHX-Gy-fAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
