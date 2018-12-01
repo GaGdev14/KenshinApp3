@@ -52,6 +52,7 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         check = inputCheck()
         if (check == true){
             if (registerFlag == 0){
+                message.text = "本当によろしいですか"
                 message.isHidden = false
                 calculateUsage()
                 print(registerFlag)
