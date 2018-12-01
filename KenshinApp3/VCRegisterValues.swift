@@ -19,10 +19,6 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var message: UILabel!
     
-    @IBOutlet weak var registerValue: UIButton!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,8 +27,7 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         
         //数字のキーボードを表示する
         self.inputValue.keyboardType = UIKeyboardType.numberPad
-        
-        registerValue.isEnabled = false
+
         message.isHidden = true
         
     }
