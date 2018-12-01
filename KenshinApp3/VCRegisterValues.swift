@@ -79,8 +79,11 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     }
     
     func inputCheck() -> Bool {
-        
-        return false
+        if Int(inputValue.text!) != nil{
+            return true
+        }else{
+            return false
+        }
     }
     
 }
