@@ -13,6 +13,8 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lastMonthValue: UILabel!
     @IBOutlet weak var inputValue: UITextField!
     
+    @IBOutlet weak var UsageOfLastYear: UILabel!
+    
     @IBAction func closePage(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -31,6 +33,14 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         self.inputValue.keyboardType = UIKeyboardType.numberPad
 
         message.isHidden = true
+        
+        //ここで値代入。今は仮の値
+        var lastMonthValueInt: Int = 1111
+        var UsageOfLastYearInt: Int = 45
+        
+        lastMonthValue.text = String(lastMonthValueInt)
+        UsageOfLastYear.text = String(UsageOfLastYearInt)
+        
         
     }
     
