@@ -13,7 +13,9 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lastMonthValue: UILabel!
     @IBOutlet weak var inputValue: UITextField!
     
-    @IBOutlet weak var UsageOfLastYear: UILabel!
+    @IBOutlet weak var usageOfLastYear: UILabel!
+    
+    @IBOutlet weak var usageThisYear: UILabel!
     
     @IBAction func closePage(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
@@ -36,10 +38,10 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         
         //ここで値代入。今は仮の値
         var lastMonthValueInt: Int = 1111
-        var UsageOfLastYearInt: Int = 45
+        var usageOfLastYearInt: Int = 45
         
         lastMonthValue.text = String(lastMonthValueInt)
-        UsageOfLastYear.text = String(UsageOfLastYearInt)
+        usageOfLastYear.text = String(usageOfLastYearInt)
         
         
     }
@@ -48,14 +50,24 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         print("ボタン押下")
         if (registerFlag == 0){
             message.isHidden = false
+            calculateUsage()
             print(registerFlag)
             registerFlag = registerFlag + 1
         }else{
             print("登録処理実施")
             print(registerFlag)
+
             //登録処理
 
         }
+    }
+    
+    public func calculateUsage(){
+        //強制的に値を出しているので、事前にnilではないことを確認する処理が必要。メソッド呼ぶ前の処理につ追加しないと多分落ちる★
+        var inputValueInt: Int = Int(inputValue.text!)!
+        var usageThisYearInt: Int = inputValueInt
+        usageThisYear.text = String(usageThisYearInt)
+        
     }
     
 }

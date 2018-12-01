@@ -130,6 +130,8 @@
                         <outlet property="inputValue" destination="HqV-DY-YJU" id="JTf-ZA-uvG"/>
                         <outlet property="lastMonthValue" destination="MQT-H7-hM2" id="n4i-dy-qMt"/>
                         <outlet property="message" destination="5RB-KV-cn4" id="8tF-Yt-jgz"/>
+                        <outlet property="usageOfLastYear" destination="Vth-8J-sf8" id="GdE-Wy-p8M"/>
+                        <outlet property="usageThisYear" destination="mg8-7b-G4g" id="uwB-yc-MSO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHX-Gy-fAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
