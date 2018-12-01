@@ -36,17 +36,4 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         message.isHidden = true
         
     }
-    
-    func tapCloseKeyBoard(){
-        print("Doneボタン押下")
-        /*
-         文言の表示・非表示を切り替えたい
-         self.message.isHidden = false
-
-        
-        //登録ボタン活性化 これも落ちる。
-        self.registerValue.isEnabled = true
- 
-  */
-    }
 }
