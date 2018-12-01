@@ -48,18 +48,26 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     
     @IBAction func registerValue(_ sender: Any) {
         print("ボタン押下")
-        if (registerFlag == 0){
-            message.isHidden = false
-            calculateUsage()
-            print(registerFlag)
-            registerFlag = registerFlag + 1
+        var check:Bool = false
+        check = inputCheck()
+        if (check == true){
+            if (registerFlag == 0){
+                message.isHidden = false
+                calculateUsage()
+                print(registerFlag)
+                registerFlag = registerFlag + 1
+            }else{
+                print("登録処理実施")
+                print(registerFlag)
+                
+                //登録処理
+                
+            }
         }else{
-            print("登録処理実施")
-            print(registerFlag)
-
-            //登録処理
-
+            message.text = "検針値を入力してください"
+            message.isHidden = false
         }
+        
     }
     
     public func calculateUsage(){
@@ -68,6 +76,11 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         var usageThisYearInt: Int = inputValueInt - Int(lastMonthValue.text!)!
         usageThisYear.text = String(usageThisYearInt)
         
+    }
+    
+    func inputCheck() -> Bool {
+        
+        return false
     }
     
 }
