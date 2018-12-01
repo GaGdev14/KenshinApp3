@@ -65,14 +65,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nro-Yd-ojm">
-                                <rect key="frame" x="263" y="294" width="53" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="登録"/>
-                                <connections>
-                                    <action selector="registerValue:" destination="fKT-ZD-4XC" eventType="touchUpInside" id="nzf-cf-k0t"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今月　：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-pl-iRY">
                                 <rect key="frame" x="60" y="225" width="77.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -91,12 +83,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="{ 前回検針値 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-H7-hM2">
-                                <rect key="frame" x="157" y="115" width="148" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 前回検針値 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQT-H7-hM2">
+                                <rect key="frame" x="157.5" y="114" width="120.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGa-Zn-UjT">
+                                <rect key="frame" x="276" y="303" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="registerValue:" destination="fKT-ZD-4XC" eventType="touchUpInside" id="UsH-TM-idW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -126,10 +126,12 @@
                     </view>
                     <connections>
                         <outlet property="Message" destination="5RB-KV-cn4" id="MUu-AR-gqm"/>
+                        <outlet property="UsageOfLastYear" destination="Vth-8J-sf8" id="a9r-pe-7H7"/>
                         <outlet property="inputValue" destination="HqV-DY-YJU" id="JTf-ZA-uvG"/>
                         <outlet property="lastMonthValue" destination="MQT-H7-hM2" id="n4i-dy-qMt"/>
                         <outlet property="message" destination="5RB-KV-cn4" id="8tF-Yt-jgz"/>
-                        <outlet property="registerValue" destination="nro-Yd-ojm" id="08R-Fu-XoL"/>
+                        <outlet property="usageOfLastYear" destination="Vth-8J-sf8" id="GdE-Wy-p8M"/>
+                        <outlet property="usageThisYear" destination="mg8-7b-G4g" id="uwB-yc-MSO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wHX-Gy-fAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
