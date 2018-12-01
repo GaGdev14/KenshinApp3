@@ -31,4 +31,9 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
         message.isHidden = true
         
     }
+    
+    @IBAction func registerValue(_ sender: Any) {
+        print("ボタン押下")
+    }
+    
 }
