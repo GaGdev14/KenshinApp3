@@ -65,7 +65,7 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     public func calculateUsage(){
         //強制的に値を出しているので、事前にnilではないことを確認する処理が必要。メソッド呼ぶ前の処理につ追加しないと多分落ちる★
         var inputValueInt: Int = Int(inputValue.text!)!
-        var usageThisYearInt: Int = inputValueInt
+        var usageThisYearInt: Int = inputValueInt - Int(lastMonthValue.text!)!
         usageThisYear.text = String(usageThisYearInt)
         
     }
