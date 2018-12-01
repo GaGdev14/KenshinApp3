@@ -19,6 +19,8 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var message: UILabel!
     
+    var registerFlag: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,7 +36,16 @@ class VCRegisterValues: UIViewController, UITextFieldDelegate {
     
     @IBAction func registerValue(_ sender: Any) {
         print("ボタン押下")
-        message.isHidden = false
+        if (registerFlag == 0){
+            message.isHidden = false
+            print(registerFlag)
+            registerFlag = registerFlag + 1
+        }else{
+            print("登録処理実施")
+            print(registerFlag)
+            //登録処理
+
+        }
     }
     
 }
