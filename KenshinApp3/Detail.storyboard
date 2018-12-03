@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="213" width="375" height="47"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RGf-dK-xkP">
-                                        <rect key="frame" x="0.0" y="19" width="375" height="28"/>
+                                        <rect key="frame" x="0.0" y="2" width="375" height="29"/>
                                         <segments>
                                             <segment title="サービス"/>
                                             <segment title="犬"/>
@@ -41,10 +41,9 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="top" constant="19" id="9Pp-Vb-EKK"/>
+                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="top" constant="2" id="9Pp-Vb-EKK"/>
                                     <constraint firstAttribute="trailing" secondItem="RGf-dK-xkP" secondAttribute="trailing" id="Q6v-Xa-DVb"/>
-                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="leading" secondItem="bU5-vG-1jT" secondAttribute="leading" id="jHO-lZ-GQB"/>
-                                    <constraint firstAttribute="bottom" secondItem="RGf-dK-xkP" secondAttribute="bottom" constant="1" id="yE5-sF-lL4"/>
+                                    <constraint firstAttribute="leading" secondItem="RGf-dK-xkP" secondAttribute="leading" id="jHO-lZ-GQB"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-7o-ZiT">
@@ -74,19 +73,112 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-f0-KdG">
+                                <rect key="frame" x="172" y="185" width="31" height="30"/>
+                                <state key="normal" title="検針"/>
+                                <connections>
+                                    <segue destination="pAs-ml-iSg" kind="show" id="GSn-PH-oDw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="氏名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-TE-zqy">
+                                <rect key="frame" x="37" y="78" width="62" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{社番}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNJ-EG-ehi">
+                                <rect key="frame" x="111" y="107" width="55" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{氏名}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVB-Ds-Amb">
+                                <rect key="frame" x="111" y="78" width="55" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社番：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRd-BF-r5p">
+                                <rect key="frame" x="37" y="107" width="62" height="24"/>
+                                <accessibility key="accessibilityConfiguration" label="氏名："/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検針方法：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31O-Vq-eeK">
+                                <rect key="frame" x="37" y="139" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="払込書：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UQ-f7-GBn">
+                                <rect key="frame" x="203" y="139" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="開閉栓状態：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5R-yO-mJX">
+                                <rect key="frame" x="37" y="167" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 方法 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-xH-iQu">
+                                <rect key="frame" x="127" y="139" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 状態 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmJ-qU-cNp">
+                                <rect key="frame" x="144" y="167" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 払込 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRU-nw-b3s">
+                                <rect key="frame" x="276" y="139" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="GRd-BF-r5p" firstAttribute="top" secondItem="IB2-TE-zqy" secondAttribute="bottom" constant="5" id="7q8-NC-OII"/>
+                            <constraint firstItem="pdf-xH-iQu" firstAttribute="leading" secondItem="31O-Vq-eeK" secondAttribute="trailing" constant="3" id="9Ne-5D-5u3"/>
+                            <constraint firstItem="fNJ-EG-ehi" firstAttribute="leading" secondItem="GRd-BF-r5p" secondAttribute="trailing" constant="12" id="9hr-gu-C7c"/>
+                            <constraint firstItem="bVB-Ds-Amb" firstAttribute="leading" secondItem="IB2-TE-zqy" secondAttribute="trailing" constant="12" id="9k6-Cj-Lah"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="L4i-SX-xdU" secondAttribute="top" constant="268" id="ApI-Gr-9hX"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="leading" secondItem="ghc-7o-ZiT" secondAttribute="leading" id="BIk-TN-8cj"/>
+                            <constraint firstItem="31O-Vq-eeK" firstAttribute="top" secondItem="fNJ-EG-ehi" secondAttribute="bottom" constant="8" id="CEu-1E-g9D"/>
                             <constraint firstAttribute="trailing" secondItem="yGp-2d-3Zo" secondAttribute="trailing" id="GJx-e4-4Oa"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="trailing" secondItem="ghc-7o-ZiT" secondAttribute="trailing" id="GWW-HB-KXQ"/>
+                            <constraint firstItem="cmJ-qU-cNp" firstAttribute="top" secondItem="pdf-xH-iQu" secondAttribute="bottom" constant="7" id="JaA-t1-ANm"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" id="K0b-em-teZ"/>
-                            <constraint firstItem="bU5-vG-1jT" firstAttribute="top" secondItem="L4i-SX-xdU" secondAttribute="top" constant="213" id="QTy-WN-uIb"/>
+                            <constraint firstItem="31O-Vq-eeK" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" constant="37" id="KLh-3W-rnz"/>
+                            <constraint firstItem="8UQ-f7-GBn" firstAttribute="leading" secondItem="pdf-xH-iQu" secondAttribute="trailing" constant="20" id="Kbf-BH-LYX"/>
+                            <constraint firstItem="bVB-Ds-Amb" firstAttribute="top" secondItem="yGp-2d-3Zo" secondAttribute="bottom" constant="14" id="LiM-ja-DkU"/>
+                            <constraint firstItem="GRd-BF-r5p" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" constant="37" id="PvN-mP-7Tc"/>
+                            <constraint firstItem="bU5-vG-1jT" firstAttribute="top" secondItem="7TJ-pS-LSA" secondAttribute="top" constant="193" id="QTy-WN-uIb"/>
+                            <constraint firstItem="cRU-nw-b3s" firstAttribute="leading" secondItem="8UQ-f7-GBn" secondAttribute="trailing" constant="3" id="TdY-4s-fXz"/>
+                            <constraint firstItem="fNJ-EG-ehi" firstAttribute="top" secondItem="bVB-Ds-Amb" secondAttribute="bottom" constant="5" id="UZd-x1-dzz"/>
+                            <constraint firstItem="GRd-BF-r5p" firstAttribute="leading" secondItem="IB2-TE-zqy" secondAttribute="leading" id="Vec-Uy-adZ"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="bottom" secondItem="7TJ-pS-LSA" secondAttribute="bottom" id="Wwl-AO-JHM"/>
+                            <constraint firstItem="IB2-TE-zqy" firstAttribute="top" secondItem="yGp-2d-3Zo" secondAttribute="bottom" constant="14" id="by2-jw-vLP"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="trailing" secondItem="bU5-vG-1jT" secondAttribute="trailing" id="c7C-hT-nFQ"/>
+                            <constraint firstItem="y5R-yO-mJX" firstAttribute="leading" secondItem="7TJ-pS-LSA" secondAttribute="leading" constant="37" id="faJ-tR-0y5"/>
+                            <constraint firstItem="8UQ-f7-GBn" firstAttribute="top" secondItem="GRd-BF-r5p" secondAttribute="bottom" constant="8" id="gTd-pr-FX9"/>
+                            <constraint firstItem="cRU-nw-b3s" firstAttribute="top" secondItem="GRd-BF-r5p" secondAttribute="bottom" constant="8" id="iFp-AB-qsT"/>
+                            <constraint firstItem="pdf-xH-iQu" firstAttribute="top" secondItem="fNJ-EG-ehi" secondAttribute="bottom" constant="8" id="jAR-Vf-SwR"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="bU5-vG-1jT" secondAttribute="leading" id="jeP-Nz-6bd"/>
+                            <constraint firstItem="tIV-f0-KdG" firstAttribute="bottom" secondItem="bU5-vG-1jT" secondAttribute="top" constant="2" id="nWs-KC-Rih"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="bottom" constant="8" symbolic="YES" id="ncR-U7-BJk"/>
+                            <constraint firstItem="cmJ-qU-cNp" firstAttribute="leading" secondItem="y5R-yO-mJX" secondAttribute="trailing" constant="3" id="sBm-ti-LD7"/>
+                            <constraint firstItem="tIV-f0-KdG" firstAttribute="centerX" secondItem="7TJ-pS-LSA" secondAttribute="centerX" id="tIQ-a2-RDW"/>
+                            <constraint firstItem="y5R-yO-mJX" firstAttribute="top" secondItem="31O-Vq-eeK" secondAttribute="bottom" constant="7" id="tcZ-nO-21r"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="top" secondItem="7TJ-pS-LSA" secondAttribute="top" id="uMb-gQ-BLU"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="L4i-SX-xdU" secondAttribute="leading" id="vdi-b1-ZhF"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="trailing" secondItem="7TJ-pS-LSA" secondAttribute="trailing" id="y9o-Hr-GNk"/>
@@ -106,6 +198,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXV-h1-cGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--RegisterValues-->
+        <scene sceneID="1FN-CJ-RJg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterValues" id="pAs-ml-iSg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vE-80-xBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="618"/>
         </scene>
         <!--Detail Service Container-->
         <scene sceneID="95i-4K-lbY">
