@@ -8,6 +8,9 @@
 
 import UIKit
 
+// ここに何人目のお客さまかという情報を入れる。現時点で初回は0としている
+var count: Int = 0
+
 class VCDetail: UIViewController {
  
     @IBOutlet weak var changeContauner: UISegmentedControl!
@@ -17,16 +20,10 @@ class VCDetail: UIViewController {
     @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
     
-    // 実験。ここに何人目のお客さまかという情報を入れる予定
-    var count :Int = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         containers = [serviceContainer,dogContainer,otherContainer]
         containerView.bringSubviewToFront(serviceContainer)
-        
-        // 何人目のお客さまか表示
-        print(count)
         
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         rightSwipe.direction = .right
@@ -43,8 +40,21 @@ class VCDetail: UIViewController {
             switch sender.direction {
             case .right:
                 print("前のお客さま")
+                count = count - 1
+                print(count)
+                // 画面遷移
+                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                self.present(nextView, animated: true, completion: nil)
+                
             case .left:
                 print("次のお客さま")
+                count = count + 1
+                print(count)
+                // 画面遷移
+                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                self.present(nextView, animated: true, completion: nil)
             default:
                 break
             }
