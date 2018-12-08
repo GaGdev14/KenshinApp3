@@ -32,6 +32,9 @@ class VCDetail: UIViewController {
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         leftSwipe.direction = .left
         view.addGestureRecognizer(leftSwipe)
+        
+        //意味なし。これでもタブが消えゆく・・・
+        tabBarController?.tabBar.isHidden = false
     }
     
     @objc final func handleSwipe(sender: UISwipeGestureRecognizer) {
