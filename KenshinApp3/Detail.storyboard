@@ -146,6 +146,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="GRd-BF-r5p" firstAttribute="top" secondItem="IB2-TE-zqy" secondAttribute="bottom" constant="5" id="7q8-NC-OII"/>
                             <constraint firstItem="pdf-xH-iQu" firstAttribute="leading" secondItem="31O-Vq-eeK" secondAttribute="trailing" constant="3" id="9Ne-5D-5u3"/>
