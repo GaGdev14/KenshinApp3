@@ -80,7 +80,7 @@
 		EFCA46C92191828300265ECE /* KenshinApp3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshinApp3UITests.swift; sourceTree = "<group>"; };
 		EFCA46CB2191828300265ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFCA46D721918ADC00265ECE /* Customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Customer.storyboard; sourceTree = "<group>"; };
-		EFCA46D92195956B00265ECE /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		EFCA46D92195956B00265ECE /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Detail.storyboard; path = KenshinApp3/Detail.storyboard; sourceTree = SOURCE_ROOT; };
 		EFCA46DB219595DF00265ECE /* Communication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Communication.storyboard; sourceTree = "<group>"; };
 		EFCA46DF2196D48200265ECE /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		EFCA46E12196D76500265ECE /* VCCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCCustomer.swift; sourceTree = "<group>"; };
