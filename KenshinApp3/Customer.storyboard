@@ -24,12 +24,42 @@
                                     <navigationItem title="お客さま" id="EdZ-Tz-ztQ"/>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qBL-ww-aUV">
+                                <rect key="frame" x="0.0" y="169" width="375" height="560"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="vZl-HO-iHb">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vZl-HO-iHb" id="hHI-il-OJt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HvU-74-Bl7" id="n2a-dU-UFd"/>
+                                    <outlet property="delegate" destination="HvU-74-Bl7" id="k1V-RH-gCM"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-Ji-KmA">
+                                <rect key="frame" x="0.0" y="98" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="7aK-KA-D4h"/>
-                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="top" secondItem="Za6-mg-dJz" secondAttribute="top" id="8Ll-cZ-lxh"/>
+                            <constraint firstItem="Za6-mg-dJz" firstAttribute="bottom" secondItem="qBL-ww-aUV" secondAttribute="bottom" id="3LY-wd-1b4"/>
+                            <constraint firstItem="aZd-Ji-KmA" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="Gu0-OQ-2Cf"/>
                             <constraint firstItem="eQZ-YM-ZY6" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="U2D-I9-6cg"/>
+                            <constraint firstItem="qBL-ww-aUV" firstAttribute="top" secondItem="aZd-Ji-KmA" secondAttribute="bottom" constant="15" id="UOn-Fh-7A0"/>
+                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="VhT-Tw-YYl"/>
+                            <constraint firstItem="qBL-ww-aUV" firstAttribute="leading" secondItem="Za6-mg-dJz" secondAttribute="leading" id="ZIT-YG-jT9"/>
+                            <constraint firstItem="aZd-Ji-KmA" firstAttribute="top" secondItem="eQZ-YM-ZY6" secondAttribute="bottom" constant="10" id="aYT-9b-h8t"/>
+                            <constraint firstItem="qBL-ww-aUV" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="bvZ-e7-3Sw"/>
+                            <constraint firstItem="eQZ-YM-ZY6" firstAttribute="top" secondItem="Za6-mg-dJz" secondAttribute="top" id="gTt-6r-5ly"/>
+                            <constraint firstItem="aZd-Ji-KmA" firstAttribute="trailing" secondItem="Za6-mg-dJz" secondAttribute="trailing" id="kGK-oy-f6q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Za6-mg-dJz"/>
                     </view>
