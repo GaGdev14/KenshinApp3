@@ -17,6 +17,11 @@
 		72FAF6F7219979CD000E1732 /* VCRegisterValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FAF6F6219979CD000E1732 /* VCRegisterValues.swift */; };
 		7E743B0F4987994B7F05006E /* Pods_KenshinApp3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 418C71BDB78803DDCEB2406E /* Pods_KenshinApp3.framework */; };
 		BBB8C83D954E000FEA12BA1D /* Pods_KenshinApp3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE60FB9336124441E3D2774 /* Pods_KenshinApp3UITests.framework */; };
+		EF11C9D521BD46E1000C23F5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11C9D421BD46E1000C23F5 /* Realm.framework */; };
+		EF11C9D721BD46EF000C23F5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF11C9D621BD46EF000C23F5 /* RealmSwift.framework */; };
+		EF11C9DE21BD4B23000C23F5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11C9DC21BD4B23000C23F5 /* DataManager.swift */; };
+		EF11C9DF21BD4B23000C23F5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11C9DD21BD4B23000C23F5 /* DataModel.swift */; };
+		EF11C9E121BD4F08000C23F5 /* Sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = EF11C9E021BD4BCF000C23F5 /* Sample.csv */; };
 		EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46A92191828200265ECE /* AppDelegate.swift */; };
 		EFCA46AC2191828200265ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46AB2191828200265ECE /* ViewController.swift */; };
 		EFCA46AF2191828200265ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46AD2191828200265ECE /* Main.storyboard */; };
@@ -66,6 +71,11 @@
 		A91F07BF26D89F1F56207B85 /* Pods-KenshinApp3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinApp3UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinApp3UITests/Pods-KenshinApp3UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6DC5CA62CBBF623195D2FD9 /* Pods-KenshinApp3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinApp3.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinApp3/Pods-KenshinApp3.debug.xcconfig"; sourceTree = "<group>"; };
 		DB254DB2EC13C4BDA6582629 /* Pods-KenshinApp3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KenshinApp3Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KenshinApp3Tests/Pods-KenshinApp3Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF11C9D421BD46E1000C23F5 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF11C9D621BD46EF000C23F5 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF11C9DC21BD4B23000C23F5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EF11C9DD21BD4B23000C23F5 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		EF11C9E021BD4BCF000C23F5 /* Sample.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = Sample.csv; path = /Users/a1490402/Documents/KenshinApp3/KenshinApp3/Sample.csv; sourceTree = "<absolute>"; };
 		EFCA46A62191828200265ECE /* KenshinApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenshinApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCA46A92191828200265ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCA46AB2191828200265ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF11C9D721BD46EF000C23F5 /* RealmSwift.framework in Frameworks */,
+				EF11C9D521BD46E1000C23F5 /* Realm.framework in Frameworks */,
 				7E743B0F4987994B7F05006E /* Pods_KenshinApp3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +130,8 @@
 		53AF5F322E238F77B9640456 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF11C9D621BD46EF000C23F5 /* RealmSwift.framework */,
+				EF11C9D421BD46E1000C23F5 /* Realm.framework */,
 				418C71BDB78803DDCEB2406E /* Pods_KenshinApp3.framework */,
 				98E955334A411362FCE547B0 /* Pods_KenshinApp3Tests.framework */,
 				1AE60FB9336124441E3D2774 /* Pods_KenshinApp3UITests.framework */,
@@ -163,8 +177,11 @@
 		EFCA46A82191828200265ECE /* KenshinApp3 */ = {
 			isa = PBXGroup;
 			children = (
+				EF11C9DC21BD4B23000C23F5 /* DataManager.swift */,
+				EF11C9DD21BD4B23000C23F5 /* DataModel.swift */,
 				EFCA46E521994DA900265ECE /* UIColorHex.swift */,
 				EFCA46A92191828200265ECE /* AppDelegate.swift */,
+				EF11C9E021BD4BCF000C23F5 /* Sample.csv */,
 				EFCA46AB2191828200265ECE /* ViewController.swift */,
 				EFCA46AD2191828200265ECE /* Main.storyboard */,
 				EFCA46D92195956B00265ECE /* Detail.storyboard */,
@@ -312,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF11C9E121BD4F08000C23F5 /* Sample.csv in Resources */,
 				EFCA46D821918ADC00265ECE /* Customer.storyboard in Resources */,
 				EFCA46B42191828300265ECE /* LaunchScreen.storyboard in Resources */,
 				EFCA46B12191828300265ECE /* Assets.xcassets in Resources */,
@@ -370,7 +388,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-KenshinApp3/Pods-KenshinApp3-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KenshinApp3/Pods-KenshinApp3-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
@@ -383,7 +401,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KenshinApp3/Pods-KenshinApp3-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KenshinApp3/Pods-KenshinApp3-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		582CBCF32AF90E96E2C33A2F /* [CP] Check Pods Manifest.lock */ = {
@@ -442,9 +460,11 @@
 				EFCA46AC2191828200265ECE /* ViewController.swift in Sources */,
 				7200A4912197D6DE002BDB93 /* VCDetail.swift in Sources */,
 				EFCA46E22196D76500265ECE /* VCCustomer.swift in Sources */,
+				EF11C9DF21BD4B23000C23F5 /* DataModel.swift in Sources */,
 				EFCA46E621994DA900265ECE /* UIColorHex.swift in Sources */,
 				72FAF6F7219979CD000E1732 /* VCRegisterValues.swift in Sources */,
 				7200A4932197F037002BDB93 /* VCDetail_ServiceContainer.swift in Sources */,
+				EF11C9DE21BD4B23000C23F5 /* DataManager.swift in Sources */,
 				EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */,
 				72222D6121AA632000EA4CCC /* NumberKeyBoard.swift in Sources */,
 			);
