@@ -192,8 +192,13 @@
                         <outlet property="changeContauner" destination="RGf-dK-xkP" id="fCA-mx-GEr"/>
                         <outlet property="containerView" destination="ghc-7o-ZiT" id="7as-hQ-3aD"/>
                         <outlet property="dogContainer" destination="2Hd-hY-tVz" id="P5H-As-vlt"/>
+                        <outlet property="gmtset" destination="fNJ-EG-ehi" id="udj-Iu-nQw"/>
+                        <outlet property="meterReadingMethod" destination="pdf-xH-iQu" id="bHi-v4-Dst"/>
+                        <outlet property="name" destination="bVB-Ds-Amb" id="dc2-gr-o4Y"/>
                         <outlet property="otherContainer" destination="MgM-ZJ-Myf" id="yVe-Dz-IZG"/>
+                        <outlet property="paymentForm" destination="cRU-nw-b3s" id="e1X-7W-MCf"/>
                         <outlet property="serviceContainer" destination="jwx-Jz-Qle" id="zqm-Ig-Q01"/>
+                        <outlet property="supplyState" destination="cmJ-qU-cNp" id="3qz-NM-aXF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXV-h1-cGe" userLabel="First Responder" sceneMemberID="firstResponder"/>

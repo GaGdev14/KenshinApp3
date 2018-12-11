@@ -12,13 +12,26 @@ import UIKit
 var count: Int = 0
 
 class VCDetail: UIViewController {
- 
+    
     @IBOutlet weak var changeContauner: UISegmentedControl!
     @IBOutlet weak var containerView: UITableView!
     @IBOutlet weak var serviceContainer: UIView!
     @IBOutlet weak var dogContainer: UIView!
     @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
+    
+    
+    @IBOutlet weak var name: UILabel! //氏名
+    @IBOutlet weak var gmtset: UILabel! //社番
+    @IBOutlet weak var meterReadingMethod: UILabel! //検針方法
+    @IBOutlet weak var paymentForm: UILabel! //払込書
+    
+    @IBOutlet weak var supplyState: UILabel! //開閉栓状態
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +47,15 @@ class VCDetail: UIViewController {
         view.addGestureRecognizer(leftSwipe)
         
         //意味なし。これでもタブが消えゆく・・・
-        tabBarController?.tabBar.isHidden = false
+        //tabBarController?.tabBar.isHidden = false
+        
+        //初期の値を代入
+        name.text = "(仮)東京太郎"
+        gmtset.text = String(count)
+        meterReadingMethod.text = "方法"
+        paymentForm.text = "有"
+        supplyState.text = "開栓中"
+        
     }
     
     @objc final func handleSwipe(sender: UISwipeGestureRecognizer) {
@@ -46,25 +67,43 @@ class VCDetail: UIViewController {
                 count = count - 1
                 print(count)
                 // 画面遷移
-                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-                let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
-                self.present(nextView, animated: true, completion: nil)
+                // これを活性化するとTabが消える為、使用しないこととする
+                /*
+                 let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                 let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                 self.present(nextView, animated: true, completion: nil)
+                 */
+                
+                name.text = "(仮)前のお客さま"
+                gmtset.text = String(count)
+                meterReadingMethod.text = "方法"
+                paymentForm.text = "有"
+                supplyState.text = "開栓中"
                 
             case .left:
                 print("次のお客さま")
                 count = count + 1
                 print(count)
                 // 画面遷移
-                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-                let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
-                self.present(nextView, animated: true, completion: nil)
+                /*
+                 let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                 let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                 self.present(nextView, animated: true, completion: nil)
+                 */
+                
+                name.text = "(仮)次のお客さま"
+                gmtset.text = String(count)
+                meterReadingMethod.text = "方法"
+                paymentForm.text = "有"
+                supplyState.text = "開栓中"
+                
             default:
                 break
             }
         }
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -74,3 +113,4 @@ class VCDetail: UIViewController {
         containerView.bringSubviewToFront(currentContainerView)
     }
 }
+
