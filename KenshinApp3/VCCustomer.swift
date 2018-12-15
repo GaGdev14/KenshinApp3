@@ -28,6 +28,7 @@ class VCCustomer: UIViewController {
     var sectionGohNo: [String] = []
     var Cstdata:[[String]] = [[]]
     
+    //他の画面に渡す検針お客様情報
     var selectObjects: Results<DataModel>!
     var row:[Int] = []
     
@@ -41,6 +42,8 @@ class VCCustomer: UIViewController {
         
         //データベース内に保存してあるPersonモデルを全て取得。
         objects = realm.objects(DataModel.self)
+        //初期値設定
+        selectObjects = objects
         
         //gohをlist配列に格納
         for i in 0..<objects.count {
@@ -138,6 +141,8 @@ extension VCCustomer: UITableViewDelegate {
         
         //選択されたセルの号番号でフィルター
         selectObjects = realm.objects(DataModel.self).filter("goh == %@", sectionGohNo[indexPath.section])
+        
+        //お客様照会画面へ遷移
          self.tabBarController!.selectedIndex = 1
         
         //セルの選択解除
@@ -160,14 +165,16 @@ extension VCCustomer: UITableViewDelegate {
         }
     }
  */
-    /*
-    extension VCDetail:  TabBarDelegate{
-        func didSelectTab(tabBarController: UITabBarController) {
-            //  print("test")
-        }
-        
+}
+
+extension VCCustomer:  TabBarDelegate{    
+    func didSelectTab(tabBarController: UITabBarController) {
+        print("Cust")
     }
- */
+    
+    func setObject(Object: Results<DataModel>) {
+        selectObjects = Object
+    }
 }
 
 

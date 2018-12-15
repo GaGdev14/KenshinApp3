@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 // ここに何人目のお客さまかという情報を入れる。現時点で初回は0としている
 var count: Int = 0
 
@@ -19,6 +19,10 @@ class VCDetail: UIViewController{
     @IBOutlet weak var dogContainer: UIView!
     @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
+    //他の画面に渡す検針お客様情報
+    var selectObjects: Results<DataModel>!
+    //お客様名
+    @IBOutlet weak var custName: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,8 @@ class VCDetail: UIViewController{
         
         //意味なし。これでもタブが消えゆく・・・
         tabBarController?.tabBar.isHidden = false
+        
+        //custName.text = String(selectObjects[0].name)
     }
     
     @objc final func handleSwipe(sender: UISwipeGestureRecognizer) {
@@ -76,8 +82,13 @@ class VCDetail: UIViewController{
 
 }
 extension VCDetail:  TabBarDelegate{
-    func didSelectTab(tabBarController: UITabBarController) {
-        print("test")
+    
+    func setObject(Object: Results<DataModel>) {
+        selectObjects = Object
     }
     
+    func didSelectTab(tabBarController: UITabBarController) {
+        print("Detail")
+    }
+
 }

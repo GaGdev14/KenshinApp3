@@ -8,9 +8,13 @@
 
 //import Foundation
 import UIKit
+import RealmSwift
 
-@objc protocol TabBarDelegate {
-    
+//@objc
+ protocol TabBarDelegate {
     func didSelectTab(tabBarController: UITabBarController)
+    //デリゲートで受け渡しするお客様情報のオブジェクト
+    //var custInfo: Results<DataModel>{set get}
+    
+    func setObject(Object: Results<DataModel>)
 }
-
