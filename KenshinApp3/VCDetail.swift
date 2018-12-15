@@ -65,12 +65,6 @@ class VCDetail: UIViewController{
         
     }
     
-    /*
-    func didSelectTab(tabBarController: VCTabbarViewController) {
-        print("first!")
-    }
- */
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -80,4 +74,10 @@ class VCDetail: UIViewController{
         containerView.bringSubviewToFront(currentContainerView)
     }
 
+}
+extension VCDetail:  TabBarDelegate{
+    func didSelectTab(tabBarController: UITabBarController) {
+        print("test")
+    }
+    
 }

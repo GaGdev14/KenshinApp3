@@ -8,11 +8,11 @@
 
 import UIKit
 
-class VCTabbarViewController: UITabBarController{
+class VCTabbarViewController: UITabBarController,UITabBarControllerDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.delegate = self
+        self.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -21,22 +21,10 @@ class VCTabbarViewController: UITabBarController{
         super.didReceiveMemoryWarning()
     }
     
-/*    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+   func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if viewController is TabBarDelegate {
             let vc = viewController as! TabBarDelegate
             vc.didSelectTab(tabBarController: self)
         }
     }
- */
-    
-    /*
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        if viewController is TabBarDelegate {
-            
-            let vc = viewController as! TabBarDelegate
-            vc.didSelectTab(tabBarController: self)
-        }
-    }
- */
-
 }
