@@ -22,6 +22,8 @@
 		EF11C9DE21BD4B23000C23F5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11C9DC21BD4B23000C23F5 /* DataManager.swift */; };
 		EF11C9DF21BD4B23000C23F5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11C9DD21BD4B23000C23F5 /* DataModel.swift */; };
 		EF11C9E121BD4F08000C23F5 /* Sample.csv in Resources */ = {isa = PBXBuildFile; fileRef = EF11C9E021BD4BCF000C23F5 /* Sample.csv */; };
+		EFC151E321C3B7910065B752 /* VCTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC151E221C3B7910065B752 /* VCTabbarViewController.swift */; };
+		EFC151E521C3BACD0065B752 /* TabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC151E421C3BACD0065B752 /* TabBarDelegate.swift */; };
 		EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46A92191828200265ECE /* AppDelegate.swift */; };
 		EFCA46AC2191828200265ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCA46AB2191828200265ECE /* ViewController.swift */; };
 		EFCA46AF2191828200265ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCA46AD2191828200265ECE /* Main.storyboard */; };
@@ -76,6 +78,8 @@
 		EF11C9DC21BD4B23000C23F5 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EF11C9DD21BD4B23000C23F5 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		EF11C9E021BD4BCF000C23F5 /* Sample.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = Sample.csv; path = /Users/a1490402/Documents/KenshinApp3/KenshinApp3/Sample.csv; sourceTree = "<absolute>"; };
+		EFC151E221C3B7910065B752 /* VCTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTabbarViewController.swift; sourceTree = "<group>"; };
+		EFC151E421C3BACD0065B752 /* TabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDelegate.swift; sourceTree = "<group>"; };
 		EFCA46A62191828200265ECE /* KenshinApp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KenshinApp3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCA46A92191828200265ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCA46AB2191828200265ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				EFCA46B22191828300265ECE /* LaunchScreen.storyboard */,
 				EFCA46B52191828300265ECE /* Info.plist */,
 				EFCA46E12196D76500265ECE /* VCCustomer.swift */,
+				EFC151E221C3B7910065B752 /* VCTabbarViewController.swift */,
+				EFC151E421C3BACD0065B752 /* TabBarDelegate.swift */,
 			);
 			path = KenshinApp3;
 			sourceTree = "<group>";
@@ -467,6 +473,8 @@
 				EF11C9DE21BD4B23000C23F5 /* DataManager.swift in Sources */,
 				EFCA46AA2191828200265ECE /* AppDelegate.swift in Sources */,
 				72222D6121AA632000EA4CCC /* NumberKeyBoard.swift in Sources */,
+				EFC151E521C3BACD0065B752 /* TabBarDelegate.swift in Sources */,
+				EFC151E321C3B7910065B752 /* VCTabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

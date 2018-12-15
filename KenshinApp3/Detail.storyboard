@@ -53,21 +53,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
-                                            <segue destination="2Qf-GU-4fA" kind="embed" id="X1j-gR-nvo"/>
+                                            <segue destination="2Qf-GU-4fA" kind="embed" identifier="ToService" id="X1j-gR-nvo"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Hd-hY-tVz">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
-                                            <segue destination="IHM-ua-2BH" kind="embed" id="zyd-wY-jfj"/>
+                                            <segue destination="IHM-ua-2BH" kind="embed" identifier="ToDog" id="zyd-wY-jfj"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgM-ZJ-Myf">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
-                                            <segue destination="FnD-wG-kXW" kind="embed" id="blw-qf-GV8"/>
+                                            <segue destination="FnD-wG-kXW" kind="embed" identifier="ToOther" id="blw-qf-GV8"/>
                                         </connections>
                                     </containerView>
                                 </subviews>

@@ -11,7 +11,7 @@ import UIKit
 // ここに何人目のお客さまかという情報を入れる。現時点で初回は0としている
 var count: Int = 0
 
-class VCDetail: UIViewController {
+class VCDetail: UIViewController{
  
     @IBOutlet weak var changeContauner: UISegmentedControl!
     @IBOutlet weak var containerView: UITableView!
@@ -64,6 +64,12 @@ class VCDetail: UIViewController {
         }
         
     }
+    
+    /*
+    func didSelectTab(tabBarController: VCTabbarViewController) {
+        print("first!")
+    }
+ */
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -73,4 +79,5 @@ class VCDetail: UIViewController {
         let currentContainerView = containers[sender.selectedSegmentIndex]
         containerView.bringSubviewToFront(currentContainerView)
     }
+
 }

@@ -28,6 +28,8 @@ class VCCustomer: UIViewController {
     var sectionGohNo: [String] = []
     var Cstdata:[[String]] = [[]]
     
+    var selectObjects: Results<DataModel>!
+    var row:[Int] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,23 +100,6 @@ extension VCCustomer: UITableViewDataSource {
     
     // セクションヘッダ
     
-    //色変更
-    /*
-     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-     
-     let headerView:UIView = UIView()
-     let headerLabel = UILabel()
-     
-     headerView.backgroundColor = UIColor(hex: "795548", alpha: 0.5)
-     headerLabel.textColor = UIColor(hex: "FFFFFF", alpha: 1.0)
-     //headerLabel.text = sectionGohNo[section]
-     
-     headerView.addSubview(headerLabel)
-     
-     return headerView
-     }
-     */
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?  {
         return sectionGohNo[section]
     }
@@ -146,8 +131,43 @@ extension VCCustomer: UITableViewDelegate {
     
     // セルタップ時の挙動
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //確認用
         print(indexPath)
+        //Realmのインスタンス取得
+        let realm = try! Realm()
+        
+        //選択されたセルの号番号でフィルター
+        selectObjects = realm.objects(DataModel.self).filter("goh == %@", sectionGohNo[indexPath.section])
+         self.tabBarController!.selectedIndex = 1
+        
+        //セルの選択解除
+        tableView.deselectRow(at: indexPath, animated: true)
+       
     }
+    
+    // このメソッドで渡す
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ToService" {
+            let vCCustomer:VCDetail_ServiceContainer = segue.destination as! VCDetail_ServiceContainer
+            vCC.custObjects = selectObjects
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            //号選択画面で必ずインデックスを初期化する
+            appDelegate.num = 0
+            
+        }
+    }
+ */
+    /*
+    extension VCDetail:  TabBarDelegate{
+        func didSelectTab(tabBarController: UITabBarController) {
+            //  print("test")
+        }
+        
+    }
+ */
 }
 
 

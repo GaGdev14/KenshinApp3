@@ -20,4 +20,5 @@ class VCDetail_ServiceContainer: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         return cell
     }
+    
 }
