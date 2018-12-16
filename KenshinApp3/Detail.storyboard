@@ -126,7 +126,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 方法 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-xH-iQu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="{ 方法 }" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdf-xH-iQu" userLabel="Knsn HhCd">
                                 <rect key="frame" x="127" y="139" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -191,9 +191,14 @@
                     <connections>
                         <outlet property="changeContauner" destination="RGf-dK-xkP" id="fCA-mx-GEr"/>
                         <outlet property="containerView" destination="ghc-7o-ZiT" id="7as-hQ-3aD"/>
+                        <outlet property="custName" destination="bVB-Ds-Amb" id="w3i-Qd-eXD"/>
                         <outlet property="dogContainer" destination="2Hd-hY-tVz" id="P5H-As-vlt"/>
+                        <outlet property="khsnJtCd" destination="cmJ-qU-cNp" id="Pm2-ZH-MuV"/>
+                        <outlet property="knsnHhCd" destination="pdf-xH-iQu" id="na8-L3-4Yr"/>
+                        <outlet property="meterNo" destination="fNJ-EG-ehi" id="3cK-Di-Z25"/>
                         <outlet property="otherContainer" destination="MgM-ZJ-Myf" id="yVe-Dz-IZG"/>
                         <outlet property="serviceContainer" destination="jwx-Jz-Qle" id="zqm-Ig-Q01"/>
+                        <outlet property="shrHhCd" destination="cRU-nw-b3s" id="mcK-hk-qwG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXV-h1-cGe" userLabel="First Responder" sceneMemberID="firstResponder"/>

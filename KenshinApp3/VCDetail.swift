@@ -9,7 +9,8 @@
 import UIKit
 import RealmSwift
 // ここに何人目のお客さまかという情報を入れる。現時点で初回は0としている
-var count: Int = 0
+//var count: Int = 0
+
 
 class VCDetail: UIViewController{
  
@@ -20,9 +21,19 @@ class VCDetail: UIViewController{
     @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
     //他の画面に渡す検針お客様情報
-    var selectObjects: Results<DataModel>!
+    //var selectObjects: Results<DataModel>!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     //お客様名
     @IBOutlet weak var custName: UILabel!
+    //メーター社番
+    @IBOutlet weak var meterNo: UILabel!
+    //検針方法
+    @IBOutlet weak var knsnHhCd: UILabel!
+    //開閉栓状態
+    @IBOutlet weak var khsnJtCd: UILabel!
+    //支払い方法
+    @IBOutlet weak var shrHhCd: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +51,19 @@ class VCDetail: UIViewController{
         //意味なし。これでもタブが消えゆく・・・
         tabBarController?.tabBar.isHidden = false
         
-        //custName.text = String(selectObjects[0].name)
+    }
+    
+    //タブを遷移した際に呼び出される
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //お客様名格納
+        custName.text = String(appDelegate.selectObjects![appDelegate.num!].name)
+        //社番格納
+        meterNo.text = String(appDelegate.selectObjects![appDelegate.num!].syaban)
+        //debug用
+        print("detail表示確認")
+        
     }
     
     @objc final func handleSwipe(sender: UISwipeGestureRecognizer) {
@@ -49,21 +72,21 @@ class VCDetail: UIViewController{
             switch sender.direction {
             case .right:
                 print("前のお客さま")
-                count = count - 1
-                print(count)
+                //count = count - 1
+                //print(count)
                 // 画面遷移
-                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-                let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
-                self.present(nextView, animated: true, completion: nil)
+                //let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                //let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                //self.present(nextView, animated: true, completion: nil)
                 
             case .left:
                 print("次のお客さま")
-                count = count + 1
-                print(count)
+                //count = count + 1
+                //print(count)
                 // 画面遷移
-                let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-                let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
-                self.present(nextView, animated: true, completion: nil)
+                //let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                //let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                //self.present(nextView, animated: true, completion: nil)
             default:
                 break
             }
@@ -82,11 +105,6 @@ class VCDetail: UIViewController{
 
 }
 extension VCDetail:  TabBarDelegate{
-    
-    func setObject(Object: Results<DataModel>) {
-        selectObjects = Object
-    }
-    
     func didSelectTab(tabBarController: UITabBarController) {
         print("Detail")
     }
