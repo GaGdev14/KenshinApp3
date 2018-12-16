@@ -35,6 +35,19 @@ class VCDetail: UIViewController{
     //支払い方法
     @IBOutlet weak var shrHhCd: UILabel!
     
+    
+    @IBOutlet weak var name: UILabel! //氏名
+    @IBOutlet weak var gmtset: UILabel! //社番
+    @IBOutlet weak var meterReadingMethod: UILabel! //検針方法
+    @IBOutlet weak var paymentForm: UILabel! //払込書
+    
+    @IBOutlet weak var supplyState: UILabel! //開閉栓状態
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         containers = [serviceContainer,dogContainer,otherContainer]
@@ -49,6 +62,7 @@ class VCDetail: UIViewController{
         view.addGestureRecognizer(leftSwipe)
         
         //意味なし。これでもタブが消えゆく・・・
+
         tabBarController?.tabBar.isHidden = false
         
     }
@@ -63,6 +77,7 @@ class VCDetail: UIViewController{
         meterNo.text = String(appDelegate.selectObjects![appDelegate.num!].syaban)
         //debug用
         print("detail表示確認")
+
         
     }
     
@@ -85,9 +100,11 @@ class VCDetail: UIViewController{
                 //count = count - 1
                 //print(count)
                 // 画面遷移
+
                 //let storyboard = UIStoryboard(name: "Detail", bundle: nil)
                 //let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
                 //self.present(nextView, animated: true, completion: nil)
+
                 
             case .left:
                 print("次のお客さま")
@@ -103,6 +120,7 @@ class VCDetail: UIViewController{
                 //count = count + 1
                 //print(count)
                 // 画面遷移
+              
                 //let storyboard = UIStoryboard(name: "Detail", bundle: nil)
                 //let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
                 //self.present(nextView, animated: true, completion: nil)
@@ -137,3 +155,4 @@ extension VCDetail:  TabBarDelegate{
     }
 
 }
+
