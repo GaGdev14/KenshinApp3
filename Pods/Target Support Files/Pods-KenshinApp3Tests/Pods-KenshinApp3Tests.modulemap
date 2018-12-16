@@ -1,0 +1,6 @@
+framework module Pods_KenshinApp3Tests {
+  umbrella header "Pods-KenshinApp3Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
