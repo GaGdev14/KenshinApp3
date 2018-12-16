@@ -72,6 +72,16 @@ class VCDetail: UIViewController{
             switch sender.direction {
             case .right:
                 print("前のお客さま")
+                
+                //selectObjectの添え字がマイナスになならないようにち調整
+                if appDelegate.num! == 0{
+                    appDelegate.num! = appDelegate.selectObjects!.count-1
+                }
+                else{
+                    appDelegate.num! -= 1
+                }
+                print("\(appDelegate.num!)")
+                
                 //count = count - 1
                 //print(count)
                 // 画面遷移
@@ -81,6 +91,15 @@ class VCDetail: UIViewController{
                 
             case .left:
                 print("次のお客さま")
+                
+                //selectObjectの配列の添え字が最大個数を超えないように調整
+                if appDelegate.num! == appDelegate.selectObjects!.count-1{
+                    appDelegate.num! = 0
+                }
+                else{
+                    appDelegate.num! += 1
+                }
+
                 //count = count + 1
                 //print(count)
                 // 画面遷移
@@ -90,6 +109,14 @@ class VCDetail: UIViewController{
             default:
                 break
             }
+            
+            //結果を更新
+            
+            //お客様名格納
+            custName.text = String(appDelegate.selectObjects![appDelegate.num!].name)
+            //社番格納
+            meterNo.text = String(appDelegate.selectObjects![appDelegate.num!].syaban)
+
         }
         
     }
