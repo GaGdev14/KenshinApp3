@@ -7,18 +7,33 @@
 //
 
 import UIKit
-
+import RealmSwift
 // ここに何人目のお客さまかという情報を入れる。現時点で初回は0としている
-var count: Int = 0
+//var count: Int = 0
 
-class VCDetail: UIViewController {
-    
+
+class VCDetail: UIViewController{
+ 
     @IBOutlet weak var changeContauner: UISegmentedControl!
     @IBOutlet weak var containerView: UITableView!
     @IBOutlet weak var serviceContainer: UIView!
     @IBOutlet weak var dogContainer: UIView!
     @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
+    //他の画面に渡す検針お客様情報
+    //var selectObjects: Results<DataModel>!
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    //お客様名
+    @IBOutlet weak var custName: UILabel!
+    //メーター社番
+    @IBOutlet weak var meterNo: UILabel!
+    //検針方法
+    @IBOutlet weak var knsnHhCd: UILabel!
+    //開閉栓状態
+    @IBOutlet weak var khsnJtCd: UILabel!
+    //支払い方法
+    @IBOutlet weak var shrHhCd: UILabel!
     
     
     @IBOutlet weak var name: UILabel! //氏名
@@ -47,14 +62,22 @@ class VCDetail: UIViewController {
         view.addGestureRecognizer(leftSwipe)
         
         //意味なし。これでもタブが消えゆく・・・
-        //tabBarController?.tabBar.isHidden = false
+
+        tabBarController?.tabBar.isHidden = false
         
-        //初期の値を代入
-        name.text = "(仮)東京太郎"
-        gmtset.text = String(count)
-        meterReadingMethod.text = "方法"
-        paymentForm.text = "有"
-        supplyState.text = "開栓中"
+    }
+    
+    //タブを遷移した際に呼び出される
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //お客様名格納
+        custName.text = String(appDelegate.selectObjects![appDelegate.num!].name)
+        //社番格納
+        meterNo.text = String(appDelegate.selectObjects![appDelegate.num!].syaban)
+        //debug用
+        print("detail表示確認")
+
         
     }
     
@@ -64,42 +87,54 @@ class VCDetail: UIViewController {
             switch sender.direction {
             case .right:
                 print("前のお客さま")
-                count = count - 1
-                print(count)
-                // 画面遷移
-                // これを活性化するとTabが消える為、使用しないこととする
-                /*
-                 let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-                 let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
-                 self.present(nextView, animated: true, completion: nil)
-                 */
                 
-                name.text = "(仮)前のお客さま"
-                gmtset.text = String(count)
-                meterReadingMethod.text = "方法"
-                paymentForm.text = "有"
-                supplyState.text = "開栓中"
+                //selectObjectの添え字がマイナスになならないようにち調整
+                if appDelegate.num! == 0{
+                    appDelegate.num! = appDelegate.selectObjects!.count-1
+                }
+                else{
+                    appDelegate.num! -= 1
+                }
+                print("\(appDelegate.num!)")
+                
+                //count = count - 1
+                //print(count)
+                // 画面遷移
+
+                //let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                //let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                //self.present(nextView, animated: true, completion: nil)
+
                 
             case .left:
                 print("次のお客さま")
-                count = count + 1
-                print(count)
+                
+                //selectObjectの配列の添え字が最大個数を超えないように調整
+                if appDelegate.num! == appDelegate.selectObjects!.count-1{
+                    appDelegate.num! = 0
+                }
+                else{
+                    appDelegate.num! += 1
+                }
+
+                //count = count + 1
+                //print(count)
                 // 画面遷移
-                /*
-                 let storyboard = UIStoryboard(name: "Detail", bundle: nil)
-                 let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
-                 self.present(nextView, animated: true, completion: nil)
-                 */
-                
-                name.text = "(仮)次のお客さま"
-                gmtset.text = String(count)
-                meterReadingMethod.text = "方法"
-                paymentForm.text = "有"
-                supplyState.text = "開栓中"
-                
+              
+                //let storyboard = UIStoryboard(name: "Detail", bundle: nil)
+                //let nextView = storyboard.instantiateViewController(withIdentifier: "VCDatail-ID")
+                //self.present(nextView, animated: true, completion: nil)
             default:
                 break
             }
+            
+            //結果を更新
+            
+            //お客様名格納
+            custName.text = String(appDelegate.selectObjects![appDelegate.num!].name)
+            //社番格納
+            meterNo.text = String(appDelegate.selectObjects![appDelegate.num!].syaban)
+
         }
         
     }
@@ -112,5 +147,12 @@ class VCDetail: UIViewController {
         let currentContainerView = containers[sender.selectedSegmentIndex]
         containerView.bringSubviewToFront(currentContainerView)
     }
+
+}
+extension VCDetail:  TabBarDelegate{
+    func didSelectTab(tabBarController: UITabBarController) {
+        print("Detail")
+    }
+
 }
 

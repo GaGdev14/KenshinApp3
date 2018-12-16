@@ -70,6 +70,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ガスパッチョ" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-3a-uY2">
+                                <rect key="frame" x="245" y="674" width="149" height="188"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -82,6 +85,8 @@
                             <constraint firstItem="Ttx-me-EgZ" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" id="PVj-tT-hqB"/>
                             <constraint firstItem="725-ua-JSv" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" constant="94" id="Pgv-pe-X3b"/>
                             <constraint firstItem="725-ua-JSv" firstAttribute="top" secondItem="Ttx-me-EgZ" secondAttribute="bottom" constant="40" id="RXZ-kw-baC"/>
+                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="Orp-3a-uY2" secondAttribute="trailing" constant="20" id="SpL-P4-yGf"/>
+                            <constraint firstItem="Orp-3a-uY2" firstAttribute="bottom" secondItem="j0D-nT-D4t" secondAttribute="bottom" id="WO3-z4-GhR"/>
                             <constraint firstItem="fjV-vA-PeE" firstAttribute="top" secondItem="725-ua-JSv" secondAttribute="bottom" constant="55" id="caz-NI-eH2"/>
                             <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="fjV-vA-PeE" secondAttribute="trailing" constant="93" id="dG7-Pf-YdL"/>
                             <constraint firstItem="zni-Mr-3nE" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" constant="94" id="fyu-Hk-IBy"/>
@@ -105,4 +110,7 @@
             <point key="canvasLocation" x="254" y="-354"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ガスパッチョ" width="149" height="188"/>
+    </resources>
 </document>
