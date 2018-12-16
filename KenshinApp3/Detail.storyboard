@@ -193,11 +193,15 @@
                         <outlet property="containerView" destination="ghc-7o-ZiT" id="7as-hQ-3aD"/>
                         <outlet property="custName" destination="bVB-Ds-Amb" id="w3i-Qd-eXD"/>
                         <outlet property="dogContainer" destination="2Hd-hY-tVz" id="P5H-As-vlt"/>
+                      
                         <outlet property="khsnJtCd" destination="cmJ-qU-cNp" id="Pm2-ZH-MuV"/>
                         <outlet property="knsnHhCd" destination="pdf-xH-iQu" id="na8-L3-4Yr"/>
                         <outlet property="meterNo" destination="fNJ-EG-ehi" id="3cK-Di-Z25"/>
+
                         <outlet property="otherContainer" destination="MgM-ZJ-Myf" id="yVe-Dz-IZG"/>
+                        <outlet property="paymentForm" destination="cRU-nw-b3s" id="e1X-7W-MCf"/>
                         <outlet property="serviceContainer" destination="jwx-Jz-Qle" id="zqm-Ig-Q01"/>
+
                         <outlet property="shrHhCd" destination="cRU-nw-b3s" id="mcK-hk-qwG"/>
                     </connections>
                 </viewController>
