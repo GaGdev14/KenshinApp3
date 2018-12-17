@@ -9,24 +9,19 @@
 import UIKit
 import RealmSwift
 
-class VCCustomer: UIViewController {
+class VCCustomer: UIViewController ,UISearchBarDelegate  {
     
     var gohList : [String] = []
     
     
-    //@IBOutlet weak var CstTable: UITableView!
-    //var items1: NSMutableArray = ["ねずみ", "うし", "とら", "うさぎ", "りゅう"]
-    
-    /*
-     let Cstdata = [
-     ["検針　花子１", "検針　花子2", "検針　花子3"],
-     ["シナモロール", "モカ"]
-     ]
-     */
+    @IBOutlet weak var tableView: UITableView!
+    //検索バー
+    @IBOutlet weak var searchBar: UISearchBar!
+    //検索結果配列
+    var searchResult = [String]()
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    //let sectionGohNo = ["1000-0001","1000-0002"]
     var sectionGohNo: [String] = []
     var Cstdata:[[String]] = [[]]
     
@@ -38,6 +33,8 @@ class VCCustomer: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         var objects: Results<DataModel>!
+        
+   
         
         //Realmのインスタンス取得
         let realm = try! Realm()
@@ -66,6 +63,15 @@ class VCCustomer: UIViewController {
                 Cstdata[i].append(objs[j].name)
             }
         }
+        
+        //デリゲート先を自分に設定する。
+        searchBar.delegate = self
+        
+        //何も入力されていなくてもReturnキーを押せるようにする。
+        searchBar.enablesReturnKeyAutomatically = false
+        
+        //検索結果配列にデータをコピーする。
+        searchResult = sectionGohNo
     }
     
     override func didReceiveMemoryWarning() {
@@ -73,21 +79,28 @@ class VCCustomer: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // セルの数を返す。
-    /*
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     return items1.count
-     }
-     
-     // セルを返す。
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     // セルにテキストを出力する。
-     let cell = tableView.dequeueReusableCell(withIdentifier:  "cell", for:indexPath as IndexPath)
-     cell.textLabel?.text = items1[indexPath.row] as? String
-     
-     return cell
-     }
-     */
+    //検索ボタン押下時の呼び出しメソッド
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+        
+        //検索結果配列を空にする。
+        searchResult.removeAll()
+        
+        if(searchBar.text == "") {
+            //検索文字列が空の場合はすべてを表示する。
+            searchResult = sectionGohNo
+        } else {
+            //検索文字列を含むデータを検索結果配列に追加する。
+            for data in sectionGohNo {
+                if data.contains(searchBar.text!) {
+                    searchResult.append(data)
+                }
+            }
+        }
+        print("search")
+        //テーブルを再読み込みする。
+        tableView.reloadData()
+    }
     
 }
 
@@ -101,14 +114,19 @@ extension VCCustomer: UITableViewDataSource {
     
     // セクション数
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionGohNo.count
+        return searchResult.count
+        //return sectionGohNo.count
     }
     
     // セクションヘッダ
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?  {
-        return sectionGohNo[section]
+        return searchResult[section]
+        //return sectionGohNo[section]
     }
+ 
+
+
     
     // セルの高さ
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -125,6 +143,8 @@ extension VCCustomer: UITableViewDataSource {
         
         return cell
     }
+    
+    
 }
 
 // セルタップ時の動作定義など
@@ -154,22 +174,7 @@ extension VCCustomer: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
        
     }
-    
-    // このメソッドで渡す
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "ToService" {
-            let vCCustomer:VCDetail_ServiceContainer = segue.destination as! VCDetail_ServiceContainer
-            vCC.custObjects = selectObjects
-            
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            //号選択画面で必ずインデックスを初期化する
-            appDelegate.num = 0
-            
-        }
-    }
- */
+
 }
 
 extension VCCustomer:  TabBarDelegate{    
