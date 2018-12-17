@@ -73,7 +73,7 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         searchBar.enablesReturnKeyAutomatically = false
         
         //テンキー設定
-        //self.searchBar.keyboardType = UIKeyboardType.numberPad
+        self.searchBar.keyboardType = UIKeyboardType.numberPad
         
         searchBar.showsCancelButton = true
 
@@ -86,12 +86,11 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
     
-    //検索ボタン押下時の呼び出しメソッド
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.endEditing(true)
+    //テキスト変更時の呼び出しメソッド
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+       // searchBar.endEditing(true)
         
         //検索結果配列を空にする。
         searchResult.removeAll()
@@ -110,13 +109,16 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         print("search")
         //テーブルを再読み込みする。
         tableView.reloadData()
-    }
+        }
+
     
     // キャンセルボタンが押された時に呼ばれる
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.showsCancelButton = false
         self.view.endEditing(true)
         searchBar.text = ""
+        //検索結果をリセット
+        searchResult = sectionGohNo
         self.tableView.reloadData()
     }
     

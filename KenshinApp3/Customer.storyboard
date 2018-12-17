@@ -42,7 +42,7 @@
                                     <outlet property="delegate" destination="HvU-74-Bl7" id="k1V-RH-gCM"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-Ji-KmA">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-Ji-KmA" customClass="NumberKeyBoard2" customModule="KenshinApp3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
