@@ -34,6 +34,8 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         // Do any additional setup after loading the view, typically from a nib.
         var objects: Results<DataModel>!
         
+    
+        
    
         
         //Realmのインスタンス取得
@@ -70,6 +72,12 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         //何も入力されていなくてもReturnキーを押せるようにする。
         searchBar.enablesReturnKeyAutomatically = false
         
+        //テンキー設定
+        //self.searchBar.keyboardType = UIKeyboardType.numberPad
+        
+        searchBar.showsCancelButton = true
+
+        
         //検索結果配列にデータをコピーする。
         searchResult = sectionGohNo
     }
@@ -78,6 +86,8 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
     
     //検索ボタン押下時の呼び出しメソッド
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -100,6 +110,20 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         print("search")
         //テーブルを再読み込みする。
         tableView.reloadData()
+    }
+    
+    // キャンセルボタンが押された時に呼ばれる
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.showsCancelButton = false
+        self.view.endEditing(true)
+        searchBar.text = ""
+        self.tableView.reloadData()
+    }
+    
+    // テキストフィールド入力開始前に呼ばれる
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        searchBar.showsCancelButton = true
+        return true
     }
     
 }
