@@ -23,11 +23,37 @@
                                     <navigationItem title="通信" id="fie-A1-5HP"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本日もお疲れさまです" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aal-dJ-EXv">
+                                <rect key="frame" x="81" y="205" width="213.5" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQp-9O-0eL" customClass="Button_Custom">
+                                <rect key="frame" x="128.5" y="261" width="118" height="36"/>
+                                <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="ZMJ-EO-gHh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="完了報告">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="aal-dJ-EXv" firstAttribute="top" secondItem="QgY-Rp-dxv" secondAttribute="bottom" constant="141" id="1lB-tZ-evM"/>
                             <constraint firstItem="QgY-Rp-dxv" firstAttribute="trailing" secondItem="QcK-Xo-R8p" secondAttribute="trailing" id="42p-Ki-Qu5"/>
                             <constraint firstItem="QgY-Rp-dxv" firstAttribute="leading" secondItem="QcK-Xo-R8p" secondAttribute="leading" id="9pb-lN-Jvb"/>
+                            <constraint firstItem="aal-dJ-EXv" firstAttribute="centerX" secondItem="xQp-9O-0eL" secondAttribute="centerX" id="VLI-xs-gEk"/>
+                            <constraint firstItem="aal-dJ-EXv" firstAttribute="centerX" secondItem="QgY-Rp-dxv" secondAttribute="centerX" id="fXL-eA-pkP"/>
+                            <constraint firstItem="xQp-9O-0eL" firstAttribute="top" secondItem="aal-dJ-EXv" secondAttribute="bottom" constant="30" id="jt7-aO-KYQ"/>
                             <constraint firstItem="QgY-Rp-dxv" firstAttribute="top" secondItem="QcK-Xo-R8p" secondAttribute="top" id="mkz-GS-tI4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QcK-Xo-R8p"/>
