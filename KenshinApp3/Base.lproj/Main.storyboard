@@ -103,6 +103,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j0D-nT-D4t"/>
                     </view>
+                    <connections>
+                        <outlet property="id" destination="fjV-vA-PeE" id="Cwj-8z-LmA"/>
+                        <outlet property="password" destination="zni-Mr-3nE" id="YdP-dN-hQH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fjb-ar-c6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
