@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="213" width="375" height="47"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RGf-dK-xkP">
-                                        <rect key="frame" x="0.0" y="2" width="375" height="29"/>
+                                        <rect key="frame" x="0.0" y="21" width="375" height="29"/>
                                         <segments>
                                             <segment title="サービス"/>
                                             <segment title="犬"/>
@@ -41,7 +40,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="top" constant="2" id="9Pp-Vb-EKK"/>
+                                    <constraint firstItem="RGf-dK-xkP" firstAttribute="bottom" secondItem="bU5-vG-1jT" secondAttribute="bottom" constant="2" id="9Pp-Vb-EKK"/>
                                     <constraint firstAttribute="trailing" secondItem="RGf-dK-xkP" secondAttribute="trailing" id="Q6v-Xa-DVb"/>
                                     <constraint firstAttribute="leading" secondItem="RGf-dK-xkP" secondAttribute="leading" id="jHO-lZ-GQB"/>
                                 </constraints>
@@ -74,7 +73,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIV-f0-KdG">
-                                <rect key="frame" x="172" y="185" width="31" height="30"/>
+                                <rect key="frame" x="172" y="193" width="31" height="30"/>
                                 <state key="normal" title="検針"/>
                                 <connections>
                                     <segue destination="pAs-ml-iSg" kind="show" id="GSn-PH-oDw"/>
@@ -175,7 +174,7 @@
                             <constraint firstItem="cRU-nw-b3s" firstAttribute="top" secondItem="GRd-BF-r5p" secondAttribute="bottom" constant="8" id="iFp-AB-qsT"/>
                             <constraint firstItem="pdf-xH-iQu" firstAttribute="top" secondItem="fNJ-EG-ehi" secondAttribute="bottom" constant="8" id="jAR-Vf-SwR"/>
                             <constraint firstItem="yGp-2d-3Zo" firstAttribute="leading" secondItem="bU5-vG-1jT" secondAttribute="leading" id="jeP-Nz-6bd"/>
-                            <constraint firstItem="tIV-f0-KdG" firstAttribute="bottom" secondItem="bU5-vG-1jT" secondAttribute="top" constant="2" id="nWs-KC-Rih"/>
+                            <constraint firstItem="tIV-f0-KdG" firstAttribute="top" secondItem="y5R-yO-mJX" secondAttribute="bottom" constant="5" id="nWs-KC-Rih"/>
                             <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="bU5-vG-1jT" secondAttribute="bottom" constant="8" symbolic="YES" id="ncR-U7-BJk"/>
                             <constraint firstItem="cmJ-qU-cNp" firstAttribute="leading" secondItem="y5R-yO-mJX" secondAttribute="trailing" constant="3" id="sBm-ti-LD7"/>
                             <constraint firstItem="tIV-f0-KdG" firstAttribute="centerX" secondItem="7TJ-pS-LSA" secondAttribute="centerX" id="tIQ-a2-RDW"/>
@@ -193,15 +192,12 @@
                         <outlet property="containerView" destination="ghc-7o-ZiT" id="7as-hQ-3aD"/>
                         <outlet property="custName" destination="bVB-Ds-Amb" id="w3i-Qd-eXD"/>
                         <outlet property="dogContainer" destination="2Hd-hY-tVz" id="P5H-As-vlt"/>
-                      
                         <outlet property="khsnJtCd" destination="cmJ-qU-cNp" id="Pm2-ZH-MuV"/>
                         <outlet property="knsnHhCd" destination="pdf-xH-iQu" id="na8-L3-4Yr"/>
                         <outlet property="meterNo" destination="fNJ-EG-ehi" id="3cK-Di-Z25"/>
-
                         <outlet property="otherContainer" destination="MgM-ZJ-Myf" id="yVe-Dz-IZG"/>
                         <outlet property="paymentForm" destination="cRU-nw-b3s" id="e1X-7W-MCf"/>
                         <outlet property="serviceContainer" destination="jwx-Jz-Qle" id="zqm-Ig-Q01"/>
-
                         <outlet property="shrHhCd" destination="cRU-nw-b3s" id="mcK-hk-qwG"/>
                     </connections>
                 </viewController>
