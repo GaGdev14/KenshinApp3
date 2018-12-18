@@ -20,6 +20,8 @@ class VCDetail: UIViewController{
     @IBOutlet weak var dogContainer: UIView!
     @IBOutlet weak var otherContainer: UIView!
     var containers: Array<UIView> = []
+    @IBOutlet weak var selectMenu: UISegmentedControl!
+    
     //他の画面に渡す検針お客様情報
     //var selectObjects: Results<DataModel>!
     
@@ -44,10 +46,6 @@ class VCDetail: UIViewController{
     @IBOutlet weak var supplyState: UILabel! //開閉栓状態
     
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         containers = [serviceContainer,dogContainer,otherContainer]
@@ -64,6 +62,8 @@ class VCDetail: UIViewController{
         //意味なし。これでもタブが消えゆく・・・
 
         tabBarController?.tabBar.isHidden = false
+        
+        selectMenu.tintColor = UIColor.brown
         
     }
     
