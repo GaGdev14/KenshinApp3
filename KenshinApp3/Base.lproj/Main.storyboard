@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-Eg-Ao5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-Eg-Ao5" customClass="Button_Custom" customModule="KenshinApp3" customModuleProvider="target">
                                 <rect key="frame" x="94" y="433" width="227" height="45"/>
                                 <color key="backgroundColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -26,6 +26,11 @@
                                 </constraints>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ログイン"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="28y-DF-HdM" kind="show" identifier="toCustomer" id="owR-ab-aBh"/>
                                 </connections>
@@ -67,8 +72,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ガスパッチョ" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-3a-uY2">
-                                <rect key="frame" x="245" y="674" width="149" height="188"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ガスパッチョ" translatesAutoresizingMaskIntoConstraints="NO" id="Orp-3a-uY2">
+                                <rect key="frame" x="275" y="727" width="119" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="XFr-el-DJn"/>
+                                    <constraint firstAttribute="height" constant="130" id="bg9-dH-UGZ"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,11 +91,12 @@
                             <constraint firstItem="Ttx-me-EgZ" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" id="PVj-tT-hqB"/>
                             <constraint firstItem="725-ua-JSv" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" constant="94" id="Pgv-pe-X3b"/>
                             <constraint firstItem="725-ua-JSv" firstAttribute="top" secondItem="Ttx-me-EgZ" secondAttribute="bottom" constant="40" id="RXZ-kw-baC"/>
-                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="Orp-3a-uY2" secondAttribute="trailing" constant="20" id="SpL-P4-yGf"/>
-                            <constraint firstItem="Orp-3a-uY2" firstAttribute="bottom" secondItem="j0D-nT-D4t" secondAttribute="bottom" id="WO3-z4-GhR"/>
+                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="Orp-3a-uY2" secondAttribute="trailing" constant="26" id="SpL-P4-yGf"/>
+                            <constraint firstItem="Orp-3a-uY2" firstAttribute="bottom" secondItem="j0D-nT-D4t" secondAttribute="bottom" constant="-5" id="WO3-z4-GhR"/>
                             <constraint firstItem="fjV-vA-PeE" firstAttribute="top" secondItem="725-ua-JSv" secondAttribute="bottom" constant="55" id="caz-NI-eH2"/>
                             <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="fjV-vA-PeE" secondAttribute="trailing" constant="93" id="dG7-Pf-YdL"/>
                             <constraint firstItem="zni-Mr-3nE" firstAttribute="leading" secondItem="j0D-nT-D4t" secondAttribute="leading" constant="94" id="fyu-Hk-IBy"/>
+                            <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="Orp-3a-uY2" secondAttribute="trailing" constant="20" id="h3I-uw-en5"/>
                             <constraint firstItem="j0D-nT-D4t" firstAttribute="trailing" secondItem="zni-Mr-3nE" secondAttribute="trailing" constant="93" id="m8B-q3-gw6"/>
                             <constraint firstItem="Wd2-Eg-Ao5" firstAttribute="leading" secondItem="fjV-vA-PeE" secondAttribute="leading" id="pmf-z5-en9"/>
                             <constraint firstItem="Ttx-me-EgZ" firstAttribute="top" secondItem="j0D-nT-D4t" secondAttribute="top" id="rUN-1Z-ilx"/>
@@ -108,6 +118,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ガスパッチョ" width="149" height="188"/>
+        <image name="ガスパッチョ" width="385" height="383"/>
     </resources>
 </document>
