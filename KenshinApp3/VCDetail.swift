@@ -8,8 +8,7 @@
 
 import UIKit
 import RealmSwift
-// ここに何人目のお客さまかという情報を入れる。現時点で初回は0としている
-//var count: Int = 0
+
 
 
 class VCDetail: UIViewController{
@@ -88,7 +87,7 @@ class VCDetail: UIViewController{
             case .right:
                 print("前のお客さま")
                 
-                //selectObjectの添え字がマイナスになならないようにち調整
+                //selectObjectの添え字がマイナスになならないように調整
                 if appDelegate.num! == 0{
                     appDelegate.num! = appDelegate.selectObjects!.count-1
                 }
