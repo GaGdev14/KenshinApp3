@@ -22,7 +22,6 @@ class ViewController: UIViewController {
                 if (success) {
                     NSLog("認証成功")
                     self.performSegue(withIdentifier: "toCustomer", sender: nil)
-                    print("テスト")
                     
                 } else {
                     NSLog("認証失敗：" + error!._code.description)
