@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -43,7 +42,7 @@
                                     <outlet property="delegate" destination="HvU-74-Bl7" id="k1V-RH-gCM"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-Ji-KmA">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="aZd-Ji-KmA" customClass="NumberKeyBoard2" customModule="KenshinApp3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="98" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -65,6 +64,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="お客さま" id="A0B-qa-NXw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="aZd-Ji-KmA" id="XC0-fF-RF5"/>
+                        <outlet property="tableView" destination="qBL-ww-aUV" id="Ffm-fe-KkO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qe-j7-h6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
