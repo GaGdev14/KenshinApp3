@@ -196,7 +196,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7TJ-pS-LSA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="詳細" id="Hup-dm-Vzu"/>
+                    <tabBarItem key="tabBarItem" title="詳細" image="details" id="Hup-dm-Vzu"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="changeContauner" destination="RGf-dK-xkP" id="fCA-mx-GEr"/>
@@ -344,4 +344,7 @@
             <point key="canvasLocation" x="910" y="556"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="details" width="24" height="24"/>
+    </resources>
 </document>

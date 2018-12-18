@@ -10,6 +10,10 @@ import UIKit
 import LocalAuthentication
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +34,9 @@ class ViewController: UIViewController {
         } else {
             NSLog("TouchID非対応")
         }
+        
+        id.placeholder = "ID"
+        password.placeholder = "Password"
     }
     
     override func didReceiveMemoryWarning() {
