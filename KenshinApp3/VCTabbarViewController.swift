@@ -14,6 +14,8 @@ class VCTabbarViewController: UITabBarController,UITabBarControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
+        self.tabBar.tintColor = UIColor.brown
 
         // Do any additional setup after loading the view.
     }

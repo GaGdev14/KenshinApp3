@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Za6-mg-dJz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="お客さま" id="A0B-qa-NXw"/>
+                    <tabBarItem key="tabBarItem" title="お客さま" image="customer" id="A0B-qa-NXw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="aZd-Ji-KmA" id="XC0-fF-RF5"/>
@@ -74,4 +74,7 @@
             <point key="canvasLocation" x="10" y="37"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="customer" width="24" height="24"/>
+    </resources>
 </document>
