@@ -33,6 +33,35 @@ class DataModel: Object {
     @objc dynamic var usedLastMonth: Int = 0
     //前年使用量
     @objc dynamic var usedLastYear: Int = 0
+    //検針留意情報
+    @objc dynamic var serviceInfo1: String = ""
+    //口座拒否
+    @objc dynamic var serviceInfo2: String = ""
+    //チラシ拒否
+    @objc dynamic var serviceInfo3: String = ""
+    //応対時フィールド
+    @objc dynamic var serviceInfo4: String = ""
+    //応対時社内対応
+    @objc dynamic var serviceInfo5: String = ""
+    //ガスメータ取付位置特殊
+    @objc dynamic var serviceInfo6: String = ""
+    //検針専用情報
+    @objc dynamic var serviceInfo7: String = ""
+    //検針連絡先情報
+    @objc dynamic var serviceInfo8: String = ""
+    //検針事前連絡情報
+    @objc dynamic var serviceInfo9: String = ""
+    //連続０m３調査
+    @objc dynamic var serviceInfo10: String = ""
+    //犬情報１
+    @objc dynamic var dogInfo1: String = ""
+    //犬情報２
+    @objc dynamic var dogInfo2: String = ""
+
+
+    
+    
+    
 
     //primaryKeyを定義
     override static func primaryKey() -> String? {

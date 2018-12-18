@@ -52,6 +52,19 @@ class DataManager: Object {
         data.usedThisMonth = Int(splitStr[8])!
         data.usedLastMonth = Int(splitStr[9])!
         data.usedLastYear = Int(splitStr[10])!
+        data.serviceInfo1 = splitStr[11]
+        data.serviceInfo2 = splitStr[12]
+        data.serviceInfo3 = splitStr[13]
+        data.serviceInfo4 = splitStr[14]
+        data.serviceInfo5 = splitStr[15]
+        data.serviceInfo6 = splitStr[16]
+        data.serviceInfo7 = splitStr[17]
+        data.serviceInfo8 = splitStr[18]
+        data.serviceInfo9 = splitStr[19]
+        data.serviceInfo10 = splitStr[20]
+        data.dogInfo1 = splitStr[21]
+        data.dogInfo2 = splitStr[22]
+
         
         // 保存
         let realm = try! Realm()
