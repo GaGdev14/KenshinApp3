@@ -24,10 +24,10 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bU5-vG-1jT">
-                                <rect key="frame" x="0.0" y="213" width="375" height="47"/>
+                                <rect key="frame" x="0.0" y="213" width="375" height="45"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RGf-dK-xkP">
-                                        <rect key="frame" x="0.0" y="21" width="375" height="29"/>
+                                        <rect key="frame" x="0.0" y="19" width="375" height="29"/>
                                         <segments>
                                             <segment title="サービス"/>
                                             <segment title="犬"/>
@@ -46,24 +46,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghc-7o-ZiT">
-                                <rect key="frame" x="0.0" y="268" width="375" height="350"/>
+                                <rect key="frame" x="0.0" y="266" width="375" height="352"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwx-Jz-Qle">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <rect key="frame" x="0.0" y="-63" width="375" height="415"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="2Qf-GU-4fA" kind="embed" identifier="ToService" id="X1j-gR-nvo"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Hd-hY-tVz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <rect key="frame" x="0.0" y="-63" width="375" height="415"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="IHM-ua-2BH" kind="embed" identifier="ToDog" id="zyd-wY-jfj"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgM-ZJ-Myf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                                        <rect key="frame" x="0.0" y="-63" width="375" height="415"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                         <connections>
                                             <segue destination="FnD-wG-kXW" kind="embed" identifier="ToOther" id="blw-qf-GV8"/>
@@ -162,7 +162,7 @@
                             <constraint firstItem="pdf-xH-iQu" firstAttribute="leading" secondItem="31O-Vq-eeK" secondAttribute="trailing" constant="3" id="9Ne-5D-5u3"/>
                             <constraint firstItem="fNJ-EG-ehi" firstAttribute="leading" secondItem="GRd-BF-r5p" secondAttribute="trailing" constant="12" id="9hr-gu-C7c"/>
                             <constraint firstItem="bVB-Ds-Amb" firstAttribute="leading" secondItem="IB2-TE-zqy" secondAttribute="trailing" constant="12" id="9k6-Cj-Lah"/>
-                            <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="L4i-SX-xdU" secondAttribute="top" constant="268" id="ApI-Gr-9hX"/>
+                            <constraint firstItem="ghc-7o-ZiT" firstAttribute="top" secondItem="L4i-SX-xdU" secondAttribute="top" constant="266" id="ApI-Gr-9hX"/>
                             <constraint firstItem="bU5-vG-1jT" firstAttribute="leading" secondItem="ghc-7o-ZiT" secondAttribute="leading" id="BIk-TN-8cj"/>
                             <constraint firstItem="31O-Vq-eeK" firstAttribute="top" secondItem="fNJ-EG-ehi" secondAttribute="bottom" constant="8" id="CEu-1E-g9D"/>
                             <constraint firstAttribute="trailing" secondItem="yGp-2d-3Zo" secondAttribute="trailing" id="GJx-e4-4Oa"/>
@@ -230,7 +230,7 @@
             <objects>
                 <tableViewController id="2Qf-GU-4fA" customClass="VCDetail_ServiceContainer" customModule="KenshinApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fqc-wa-mqA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -267,7 +267,7 @@
             <objects>
                 <tableViewController id="IHM-ua-2BH" customClass="VCDetail_DogContainer" customModule="KenshinApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ijC-i4-bwy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -304,7 +304,7 @@
             <objects>
                 <tableViewController id="FnD-wG-kXW" customClass="VCDetail_OtherContainer" customModule="KenshinApp3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zps-4z-ldj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
