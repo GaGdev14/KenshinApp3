@@ -24,6 +24,7 @@
                                     <constraint firstAttribute="height" constant="45" id="9lh-t6-Adm"/>
                                     <constraint firstAttribute="width" constant="230" id="n30-7O-IiZ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ログイン"/>
                                 <userDefinedRuntimeAttributes>

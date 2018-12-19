@@ -36,19 +36,20 @@ class VCDetail: UIViewController{
     //支払い方法
     @IBOutlet weak var shrHhCd: UILabel!
     
-    
-    @IBOutlet weak var name: UILabel! //氏名
-    @IBOutlet weak var gmtset: UILabel! //社番
-    @IBOutlet weak var meterReadingMethod: UILabel! //検針方法
     @IBOutlet weak var paymentForm: UILabel! //払込書
     
-    @IBOutlet weak var supplyState: UILabel! //開閉栓状態
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         containers = [serviceContainer,dogContainer,otherContainer]
         containerView.bringSubviewToFront(serviceContainer)
+        
+        //臨時直書き
+        
+        knsnHhCd.text = "はこ"
+        paymentForm.text = "なし"
+        khsnJtCd.text = "開栓"
         
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         rightSwipe.direction = .right
@@ -62,7 +63,8 @@ class VCDetail: UIViewController{
 
         tabBarController?.tabBar.isHidden = false
         
-        selectMenu.tintColor = UIColor.brown
+        //selectMenu.tintColor = UIColor.brown
+        selectMenu.tintColor = UIColor(hex: "5D4037", alpha: 1.0)
         
     }
     
