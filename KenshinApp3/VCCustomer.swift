@@ -34,9 +34,6 @@ class VCCustomer: UIViewController ,UISearchBarDelegate  {
         // Do any additional setup after loading the view, typically from a nib.
         var objects: Results<DataModel>!
         
-    
-        
-   
         
         //Realmのインスタンス取得
         let realm = try! Realm()

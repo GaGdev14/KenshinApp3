@@ -15,7 +15,9 @@ class VCTabbarViewController: UITabBarController,UITabBarControllerDelegate{
         super.viewDidLoad()
         self.delegate = self
         
-        self.tabBar.tintColor = UIColor.brown
+        //self.tabBar.tintColor = UIColor.brown
+        self.tabBar.tintColor = UIColor(hex: "5D4037", alpha: 1.0)
+        
 
         // Do any additional setup after loading the view.
     }
